@@ -29,10 +29,11 @@ nav {
     /*Column*/
     width: 100%;
     float: left;
+    margin: 1% 0;
     padding: 1%;
-    margin-top: 1%;
     box-sizing: border-box;
-    border: 2px solid purple;
+    background-color: crimson;
+
 }
 
 nav {
@@ -67,55 +68,58 @@ h4 {
         width: 85%;
         padding: 0;
     }
+
     .leaf {
-        margin-right: 2%;
-        border: 2px solid orange;
+        /*        margin-right: 4%;*/
+        background-color: darkorange;
+        border: 1px solid black;
     }
-    /*
     .leaf:first-child {
         margin-left: 0;
     }
-*/
-    .m-one.leaf {
+    .m-one {
         width: 4.66666666667%;
+        margin-left: 2%;
     }
-    .m-two.leaf {
+    .m-two {
         width: 13.3333333333%;
     }
-    .m-three.leaf {
+    .m-three {
         width: 22%;
     }
-    .m-four.leaf {
+    .m-four {
         width: 30.6666666667%;
     }
-    .m-five.leaf {
+    .m-five {
         width: 39.3333333333%;
     }
-    .m-six.leaf {
+    .m-six {
         width: 48%;
+        margin-right: 2%;
     }
-    .m-seven.leaf {
+    .m-seven {
         width: 56.6666666667%;
     }
-    .m-eight.leaf {
+    .m-eight {
         width: 65.3333333333%;
     }
-    .m-nine.leaf {
+    .m-nine {
         width: 74.0%;
     }
-    .m-ten.leaf {
+    .m-ten {
         width: 82.6666666667%;
     }
-    .m-eleven.leaf {
+    .m-eleven {
         width: 91.3333333333%;
+        margin-left: 2%;
     }
-    .m-twelve.leaf {
+    .m-twelve {
         width: 100%;
-        /*        margin-right: 0;*/
+
     }
 }
 
-/*L*/
+/*L - Large, Yellow*/
 
 @media (min-width: 970px) {
     .branch {
@@ -123,48 +127,48 @@ h4 {
     }
     .leaf {
         margin-right: 2%;
-        border: 2px solid goldenrod;
+        background-color: gold;
     }
-    .l-one.leaf {
+    .l-one {
         width: 4.66666666667%;
     }
-    .l-two.leaf {
+    .l-two {
         width: 13.3333333333%;
     }
-    .l-three.leaf {
+    .l-three {
         width: 22%;
     }
-    .l-four.leaf {
+    .l-four {
         width: 30.6666666667%;
     }
-    .l-five.leaf {
+    .l-five {
         width: 39.3333333333%;
     }
-    .l-six.leaf {
+    .l-six {
         width: 48%;
     }
-    .l-seven.leaf {
+    .l-seven {
         width: 56.6666666667%;
     }
-    .l-eight.leaf {
+    .l-eight {
         width: 65.3333333333%;
     }
-    .l-nine.leaf {
+    .l-nine {
         width: 74.0%;
     }
-    .l-ten.leaf {
+    .l-ten {
         width: 82.6666666667%;
     }
-    .l-eleven.leaf {
+    .l-eleven {
         width: 91.3333333333%;
     }
-    .l-twelve.leaf {
+    .l-twelve {
         width: 100%;
         margin-left: 0;
     }
 }
 
-/****XL****/
+/****XL - Extra Large, Green****/
 
 @media (min-width: 1170px) {
     .branch {
@@ -172,42 +176,42 @@ h4 {
     }
     .leaf {
         margin-right: 2%;
-        border: 2px solid green;
+        background-color: green;
     }
-    .xl-one.leaf {
+    .xl-one {
         width: 4.66666666667%;
     }
-    .xl-two.leaf {
+    .xl-two {
         width: 13.3333333333%;
     }
-    .xl-three.leaf {
+    .xl-three {
         width: 22%;
     }
-    .xl-four.leaf {
+    .xl-four {
         width: 30.6666666667%;
     }
-    .xl-five.leaf {
+    .xl-five {
         width: 39.3333333333%;
     }
-    .xl-six.leaf {
+    .xl-six {
         width: 48%;
     }
-    .xl-seven.leaf {
+    .xl-seven {
         width: 56.6666666667%;
     }
-    .xl-eight.leaf {
+    .xl-eight {
         width: 65.3333333333%;
     }
-    .xl-nine.leaf {
+    .xl-nine {
         width: 74.0%;
     }
-    .xl-ten.leaf {
+    .xl-ten {
         width: 82.6666666667%;
     }
-    .xl-eleven.leaf {
+    .xl-eleven {
         width: 91.3333333333%;
     }
-    .xl-twelve.leaf {
+    .xl-twelve {
         width: 100%;
         margin-left: 0;
     }
