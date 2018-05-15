@@ -1,9 +1,5 @@
-/*
-font-family: 'Life Savers', cursive;
-font-family: 'Pangolin', cursive;
-*/
-
 .branch {
+    /*    Container*/
     position: relative;
     width: 100%;
     max-width: 960px;
@@ -13,7 +9,6 @@ font-family: 'Pangolin', cursive;
 }
 
 nav {
-    /*Makes the 'navigation' container full width*/
     position: relative;
     width: 100%;
     max-width: none;
@@ -22,13 +17,10 @@ nav {
 }
 
 .jumbotron {
-    /* The image used */
     background-image: url('../images/37192741544_487d322480_k.jpg');
-
     /* Full height */
     width: 100%;
     height: 300px;
-
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -36,15 +28,17 @@ nav {
 }
 
 .leaf {
+    /*Column*/
     width: 100%;
     float: left;
+    padding: 1%;
+    margin-top: 2%;
     box-sizing: border-box;
+    background-color: crimson;
 }
 
-img {
-    /*Make images responsive*/
-    width: 100%;
-    height: auto;
+.last-leaf {
+    margin-bottom: 2%;
 }
 
 nav {
@@ -58,105 +52,306 @@ nav h1 {
     margin: 0;
 }
 
-body {
-    background-color: rgba(255, 0, 0, 0.25);
-    /*Red*/
+footer {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    max-width: none;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: lightgoldenrodyellow;
+    text-align: center;
 }
 
-/* For devices at least 576px */
+.clearIt {
+    clear: both;
+}
+
+hr {
+    border-bottom: 1px solid black;
+}
+
+
+/*M - Medium, Orange*/
 
 @media (min-width: 750px) {
-    body {
-        background-color: rgba(255, 100, 0, 0.25);
-        /*Orange*/
-    }
     .branch {
         width: 85%;
         padding: 0;
     }
-    /*
-    .quarter.leaf {
-        width: 22%;
-    }
-    .third.leaf {
-        width: 30.6666666667%;
-    }
-    .half.leaf {
-        width: 48%;
-    }
-    .whole {
-        width: 100%;
-        margin-left: 0;
-    }
-*/
     .leaf {
+        background-color: orange;
         margin-right: 2%;
     }
-    .leaf:first-child {
-        margin-left: 0;
+    /*    Last 'leaf' never has margin-right*/
+    .leaf:last-child {
+        margin-right: 0;
     }
-    .one.leaf {
-        width: 4.66666666667%;
+    .m-one {
+        width: 6.33333%;
     }
-    .two.leaf {
-        width: 13.3333333333%;
+    .m-two {
+        width: 14.66666667%;
     }
-    .three.leaf {
-        width: 22%;
+    .m-three {
+        width: 23%;
     }
-    .four.leaf {
-        width: 30.6666666667%;
+    .m-four {
+        width: 31.33333333%;
     }
-    .five.leaf {
-        width: 39.3333333333%;
+    .m-five {
+        width: 39.66666667%;
     }
-    .six.leaf {
+    .m-six {
         width: 48%;
     }
-    .seven.leaf {
-        width: 56.6666666667%;
+    .m-seven {
+        width: 56.33333333%;
     }
-    .eight.leaf {
-        width: 65.3333333333%;
+    .m-eight {
+        width: 64.66666667%;
     }
-    .nine.leaf {
-        width: 74.0%;
+    .m-nine {
+        width: 73%;
     }
-    .ten.leaf {
-        width: 82.6666666667%;
+    .m-ten {
+        width: 81.33333333%;
     }
-    .eleven.leaf {
-        width: 91.3333333333%;
+    .m-eleven {
+        width: 89.66666667%;
     }
-    .twelve.leaf {
-        width: 100%;
-        margin-left: 0;
+    .m-twelve {
+        width: 98%;
     }
+    /*    BEGIN M Offsets
+    These numbers are based on calculation of 100 (the width) divided by 12 (grid), to equal 8.3333% per column.
+    
+    */
+    .m-space-one {
+        margin-left: 8.33333%;
+    }
+    .m-space-two {
+        margin-left: 16.66666667%;
+    }
+    .m-space-three {
+        margin-left: 25%;
+    }
+    .m-space-four {
+        margin-left: 33.33333333%;
+    }
+    .m-space-five {
+        margin-left: 41.66666667%;
+    }
+    .m-space-six {
+        margin-left: 50%;
+    }
+    .m-space-seven {
+        margin-left: 58.33333333%;
+    }
+    .m-space-eight {
+        margin-left: 66.66666667%;
+    }
+    .m-space-nine {
+        margin-left: 75%;
+    }
+    .m-space-ten {
+        margin-left: 83.33333333%;
+    }
+    .m-space-eleven {
+        margin-left: 91.66666667%;
+    }
+
+    /*      END M Offsets*/
 }
 
-/* For devices at least 768px */
+/*L*/
 
 @media (min-width: 970px) {
-    body {
-        background-color: rgba(255, 255, 0, 0.25);
-        /*Yellow*/
-    }
     .branch {
         width: 80%;
     }
+    .leaf {
+        background-color: gold;
+        margin-right: 2%;
+    }
+    /*    Last 'leaf' never has margin-right*/
+    .leaf:last-child {
+        margin-right: 0;
+    }
+    .l-one {
+        width: 6.33333%;
+    }
+    .l-two {
+        width: 14.66666667%;
+    }
+    .l-three {
+        width: 23%;
+    }
+    .l-four {
+        width: 31.33333333%;
+    }
+    .l-five {
+        width: 39.66666667%;
+    }
+    .l-six {
+        width: 48%;
+    }
+    .l-seven {
+        width: 56.33333333%;
+    }
+    .l-eight {
+        width: 64.66666667%;
+    }
+    .l-nine {
+        width: 73%;
+    }
+    .l-ten {
+        width: 81.33333333%;
+    }
+    .l-eleven {
+        width: 89.66666667%;
+    }
+    .l-twelve {
+        width: 98%;
+    }
+    /*    BEGIN L Offsets
+    These numbers are based on calculation of 100 (the width) divided by 12 (grid), to equal 8.3333% per column.
+    
+    */
+    .l-space-zero {
+        margin-left: 0;
+    }
+    .l-space-one {
+        margin-left: 8.33333%;
+    }
+    .l-space-two {
+        margin-left: 16.66666667%;
+    }
+    .l-space-three {
+        margin-left: 25%;
+    }
+    .l-space-four {
+        margin-left: 33.33333333%;
+    }
+    .l-space-five {
+        margin-left: 41.66666667%;
+    }
+    .l-space-six {
+        margin-left: 50%;
+    }
+    .l-space-seven {
+        margin-left: 58.33333333%;
+    }
+    .l-space-eight {
+        margin-left: 66.66666667%;
+    }
+    .l-space-nine {
+        margin-left: 75%;
+    }
+    .l-space-ten {
+        margin-left: 83.33333333%;
+    }
+    .l-space-eleven {
+        margin-left: 91.66666667%;
+    }
+
+    /*      END L Offsets*/
 }
 
-/* For devices larger than 992px */
+/****XL****/
 
 @media (min-width: 1170px) {
-    body {
-        background-color: rgba(0, 255, 0, 0.25);
-        /*Green*/
-    }
     .branch {
         width: 80%;
     }
+    .leaf {
+        background-color: green;
+        margin-right: 2%;
+    }
+    /*    Last 'leaf' never has margin-right*/
+    .leaf:last-child {
+        margin-right: 0;
+    }
+    .xl-one {
+        width: 6.33333%;
+    }
+    .xl-two {
+        width: 14.66666667%;
+    }
+    .xl-three {
+        width: 23%;
+    }
+    .xl-four {
+        width: 31.33333333%;
+    }
+    .xl-five {
+        width: 39.66666667%;
+    }
+    .xl-six {
+        width: 48%;
+    }
+    .xl-seven {
+        width: 56.33333333%;
+    }
+    .xl-eight {
+        width: 64.66666667%;
+    }
+    .xl-nine {
+        width: 73%;
+    }
+    .xl-ten {
+        width: 81.33333333%;
+    }
+    .xl-eleven {
+        width: 89.66666667%;
+    }
+    .xl-twelve {
+        width: 98%;
+    }
+    /*    BEGIN XL Offsets
+    These numbers are based on calculation of 100 (the width) divided by 12 (grid), to equal 8.3333% per column.
+    
+    */
+    .xl-space-zero {
+        margin-left: 0;
+    }
+    .xl-space-one {
+        margin-left: 8.33333%;
+    }
+    .xl-space-two {
+        margin-left: 16.66666667%;
+    }
+    .xl-space-three {
+        margin-left: 25%;
+    }
+    .xl-space-four {
+        margin-left: 33.33333333%;
+    }
+    .xl-space-five {
+        margin-left: 41.66666667%;
+    }
+    .xl-space-six {
+        margin-left: 50%;
+    }
+    .xl-space-seven {
+        margin-left: 58.33333333%;
+    }
+    .xl-space-eight {
+        margin-left: 66.66666667%;
+    }
+    .xl-space-nine {
+        margin-left: 75%;
+    }
+    .xl-space-ten {
+        margin-left: 83.33333333%;
+    }
+    .xl-space-eleven {
+        margin-left: 91.66666667%;
+    }
+
+    /*      END XL Offsets*/
 }
+
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– 
