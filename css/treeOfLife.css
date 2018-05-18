@@ -83,10 +83,12 @@ hr {
         background-color: orange;
         margin-right: 2%;
     }
-    /*    Last 'leaf' never has margin-right*/
+
+    /*        Last 'leaf' never has margin-right*/
     .leaf:last-child {
         margin-right: 0;
     }
+
     .m-one {
         width: 6.33333%;
     }
