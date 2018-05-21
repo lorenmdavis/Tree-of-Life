@@ -16,6 +16,23 @@
     box-sizing: border-box;
 }
 
+.leaf {
+    /*Column*/
+    width: 100%;
+    float: left;
+    padding: 1%;
+    margin-top: 2%;
+    box-sizing: border-box;
+}
+
+.leafBGColor {
+    background-color: crimson;
+}
+
+.last-leaf {
+    margin-bottom: 2%;
+}
+
 nav {
     position: relative;
     width: 100%;
@@ -40,23 +57,17 @@ nav h1 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
-.leaf {
-    /*Column*/
-    width: 100%;
-    float: left;
-    padding: 1%;
-    margin-top: 2%;
-    box-sizing: border-box;
+.intro {
+    color: white;
+    font-size: 1.25em;
 }
 
-.leafBGColor {
-    background-color: crimson;
-}
-
-.last-leaf {
-    margin-bottom: 2%;
+.documentation {
+    background-color: teal;
+    padding: 0 30px;
 }
 
 .story {
@@ -79,12 +90,23 @@ footer p {
     padding-top: 10px;
 }
 
+.btn {
+    background-color: teal;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+}
+
 .clearIt {
     clear: both;
 }
 
 hr {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #ccc;
+}
+
+i {
+    padding-right: 10px;
 }
 
 /*M - Medium, Orange*/
@@ -101,7 +123,6 @@ hr {
     .leafBGColor {
         background-color: orange;
     }
-    /*        Last 'leaf' never has margin-right*/
     .leaf:last-child {
         margin-right: 0;
     }
@@ -186,17 +207,18 @@ hr {
     /*      END M Offsets*/
 }
 
-/*L*/
+/*L - Large, Yellow*/
 
 @media (min-width: 970px) {
     .branch {
         width: 80%;
     }
     .leaf {
-        /*        background-color: gold;*/
         margin-right: 2%;
     }
-    /*    Last 'leaf' never has margin-right*/
+    .leafBGColor {
+        background-color: gold;
+    }
     .leaf:last-child {
         margin-right: 0;
     }
@@ -279,17 +301,18 @@ hr {
     /*      END L Offsets*/
 }
 
-/****XL****/
+/*XL - Extra Large, Green*/
 
 @media (min-width: 1170px) {
     .branch {
         width: 80%;
     }
     .leaf {
-        /*        background-color: green;*/
         margin-right: 2%;
     }
-    /*    Last 'leaf' never has margin-right*/
+    .leafBGColor {
+        background-color: green;
+    }
     .leaf:last-child {
         margin-right: 0;
     }
@@ -561,6 +584,23 @@ tr:hover {
     /*    adds horizontal scroll bars to table in small screens*/
     overflow-x: auto;
 }
+
+
+/*CSS for Grid Documentation*/
+
+.outlineB {
+    background-color: rgba(255, 0, 0, .5);
+}
+
+.outlineS {
+    background-color: rgba(255, 0, 0, .4);
+}
+
+.outlineL {
+    background-color: rgba(255, 0, 0, .3);
+}
+
+/*END CSS for Grid Documentation*/
 
 /* Buttons
 ––––––––––––––––––––––––––––––––––––––––––––––––––
