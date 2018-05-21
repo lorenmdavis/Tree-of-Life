@@ -8,12 +8,27 @@
     box-sizing: border-box;
 }
 
+.branch-full {
+    position: relative;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
 nav {
     position: relative;
     width: 100%;
     max-width: none;
     margin: 0 auto;
     box-sizing: border-box;
+    background-color: lightgoldenrodyellow;
+}
+
+nav h1 {
+    padding: 5px 0 0 20px;
+    font-family: 'Life Savers', cursive;
+    margin: 0;
 }
 
 .jumbotron {
@@ -34,22 +49,19 @@ nav {
     padding: 1%;
     margin-top: 2%;
     box-sizing: border-box;
-    /*    background-color: crimson;*/
+}
+
+.leafBGColor {
+    background-color: crimson;
 }
 
 .last-leaf {
     margin-bottom: 2%;
 }
 
-nav {
-    background-color: lightgoldenrodyellow;
-    margin: 0;
-}
-
-nav h1 {
-    padding: 5px 0 0 20px;
-    font-family: 'Life Savers', cursive;
-    margin: 0;
+.story {
+    background-color: burlywood;
+    padding: 0 30px;
 }
 
 footer {
@@ -63,6 +75,10 @@ footer {
     text-align: center;
 }
 
+footer p {
+    padding-top: 10px;
+}
+
 .clearIt {
     clear: both;
 }
@@ -70,7 +86,6 @@ footer {
 hr {
     border-bottom: 1px solid black;
 }
-
 
 /*M - Medium, Orange*/
 
@@ -80,10 +95,12 @@ hr {
         padding: 0;
     }
     .leaf {
-        /*        background-color: orange;*/
+
         margin-right: 2%;
     }
-
+    .leafBGColor {
+        background-color: orange;
+    }
     /*        Last 'leaf' never has margin-right*/
     .leaf:last-child {
         margin-right: 0;
@@ -124,6 +141,9 @@ hr {
     }
     .m-twelve {
         width: 98%;
+    }
+    .m-full {
+        width: 100%;
     }
     /*    BEGIN M Offsets
     These numbers are based on calculation of 100 (the width) divided by 12 (grid), to equal 8.3333% per column.
@@ -218,7 +238,6 @@ hr {
     }
     /*    BEGIN L Offsets
     These numbers are based on calculation of 100 (the width) divided by 12 (grid), to equal 8.3333% per column.
-    
     */
     .l-space-zero {
         margin-left: 0;
@@ -377,7 +396,7 @@ h4,
 h5,
 h6 {
     font-family: 'Pangolin', cursive;
-    margin: 1%;
+    margin: 0.25em;
 }
 
 h2 {
@@ -434,7 +453,7 @@ code {
 }
 
 var {
-    font-style: italic; 
+    font-style: italic;
 }
 
 abbr {
