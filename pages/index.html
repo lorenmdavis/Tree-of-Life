@@ -10,22 +10,35 @@
     <!--link to Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Life+Savers:700|Pangolin" rel="stylesheet">
     <!--Link to custom CSS-->
-    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/treeOfLife.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <!--    Link to Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 </head>
 
 <body>
 
-    <nav>
-        <h1>Trees of Life</h1>
-    </nav>
+    <header>
+        <p class="logo float-left">Tree of Life</p>
+        <nav>
+            <label for="showMenu" class="showMenu"><span class="fas fa-bars" aria-hidden="true"></span></label>
+            <input type="checkbox" id="showMenu" role="button">
+            <ul class="menu float-right">
+                <li class="menuChild"><a href="index.html" class="expandedMenu"><span class="fas fa-home"></span></a></li>
+                <li class="menuChild"><a href="#" class="expandedMenu">Documentation</a></li>
+                <li class="menuChild"><a href="#" class="expandedMenu">Examples</a></li>
+                <li class="menuChild"><a href="#" class="expandedMenu">Starting File</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="branch-full jumbotron">
         <div class="m-space-three m-six leaf">
             <p class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam officia nihil quod delectus totam. Error nesciunt impedit tenetur, blanditiis tempore minus aliquam magnam dolores, nulla atque voluptates fugiat eius quo!</p>
-            <p class="center btn btn-M sunshine">DOWNLOAD</p>
+
+            <a href="#" class="btn btn-m">MEDIUM</a>
+
         </div>
     </div>
 
@@ -54,14 +67,6 @@
         </div>
     </div>
 
-    <div class="branch">
-        <div class="stem">
-            <div class="m-twelve leaf documentation">
-                <p class="center">Framework Documentation goes here...</p>
-            </div>
-        </div>
-    </div>
-
     <div class="branch-full">
         <div class="stem">
             <div class="m-full leaf story">
@@ -74,7 +79,7 @@
     <footer class="clearIt">
         <p>Copyright &copy; 2018 Tree of Life</p>
     </footer>
-
+    <script src="scripts/script.js" type="text/javascript"></script>
 </body>
 
 </html>
