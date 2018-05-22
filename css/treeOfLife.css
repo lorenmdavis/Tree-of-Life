@@ -35,6 +35,7 @@
     margin-bottom: 2%;
 }
 
+/*
 nav {
     position: relative;
     width: 100%;
@@ -49,6 +50,7 @@ nav h1 {
     font-family: 'Life Savers', cursive;
     margin: 0;
 }
+*/
 
 .jumbotron {
     background-image: url('../images/37192741544_487d322480_k.jpg');
@@ -60,9 +62,11 @@ nav h1 {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    z-index: -1;
 }
 
 .intro {
+    /*    text inside jumbotron*/
     color: white;
     font-size: 1.25em;
 }
@@ -597,6 +601,208 @@ tr:hover {
 
 /*END CSS for Grid Documentation*/
 
+/*Marta's CSS*/
+
+/*
+fonts:
+    font-family: Arial, sans-serif;
+    font-family: 'Life Savers', cursive;
+    font-family: 'Pangolin', cursive;
+
+colors:
+    sunshine: #E3D26F
+    water: #CEE5F2
+    plants: #588157
+    soil: #443730
+    Gray: #656565
+*/
+
+/****************** R E S E T *********************/
+
+* {
+    border: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/************* end reset *******************/
+
+/**************** NO PRINT *******************/
+
+@media print {
+    .no-print,
+    .no-print * {
+        display: none !important;
+    }
+}
+
+/************** end no print ****************/
+
+/************** CLEARFIX *********************/
+
+.clearfix {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+/************** end clearfix ****************/
+
+/**************** QUICKFLOATS ***************/
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.align-center {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*************** end quickfloats ************/
+
+/*********** NAVIGATION SMALL SCREEN *************/
+
+.menu {
+    list-style-type: none;
+    display: none;
+}
+
+header nav li {
+    background-color: #443730;
+    text-align: center;
+    border-bottom: solid 1px #E3D26F;
+}
+
+header nav li:first-child {
+    margin-top: .5em;
+}
+
+header nav li:last-child {
+    border-bottom: none;
+}
+
+.expandedMenu {
+    padding: .75em 5em;
+    display: block;
+    color: #E3D26F;
+    text-decoration: none;
+}
+
+.expandedMenu:active {
+    background-color: #E3D26F;
+    color: #443730;
+}
+
+nav input[type=checkbox] {
+    display: none;
+}
+
+nav input[type=checkbox]:checked ~ ul.menu {
+    display: block;
+}
+
+.showMenu {
+    background-color: #E3D26F;
+    text-align: right;
+    padding: .25em;
+    display: block;
+    cursor: pointer;
+}
+
+.fa-bars {
+    color: #443730;
+    font-size: 1.1em;
+}
+
+/**************** end nav ************************/
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #E3D26F;
+    height: 15%;
+    padding: .5em 4em;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(102, 102, 102, 0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(102, 102, 102, 0.3);
+    box-shadow: 0px 5px 5px 0px rgba(102, 102, 102, 0.3);
+}
+
+header nav li:first-child {
+    display: none;
+}
+
+header nav li:nth-child(2) {
+    margin-top: .5em;
+}
+
+.logo {
+    font-family: 'Life Savers', cursive;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+main {
+    width: 75%;
+    margin: 0 auto;
+    padding: .75em 0;
+}
+
+main h2 {
+    font-family: 'Pangolin', cursive;
+    color: #443730;
+    font-size: 2em;
+    padding-bottom: .3em;
+}
+
+main p {
+    color: #656565;
+    padding-bottom: .75em;
+}
+
 /************** BUTTONS **********************/
 
 .btn {
@@ -671,4 +877,117 @@ tr:hover {
 .btn.disabled {
     opacity: 0.65;
     cursor: not-allowed;
+}
+
+/**************** end buttons ****************/
+
+/******** ACCORDION *************/
+
+.accordion {
+    background-color: #CEE5F2;
+    color: #588157;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: solid 1px #588157;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #588157;
+    color: #CEE5F2;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #E3D26F;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+    color: #E3D26F;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #FFF;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel-inside {
+    padding: 5px 0;
+    color: #656565;
+}
+
+/************* end accordion ***************/
+
+footer {
+    -webkit-box-shadow: 0px -5px 5px 0px rgba(102, 102, 102, 0.3);
+    -moz-box-shadow: 0px -5px 5px 0px rgba(102, 102, 102, 0.3);
+    box-shadow: 0px -5px 5px 0px rgba(102, 102, 102, 0.3);
+    background-color: #E3D26F;
+}
+
+footer p {
+    font-size: 14px;
+    color: #443730;
+    text-align: center;
+    padding: .3em;
+}
+
+footer span {
+    font-family: 'Life Savers', cursive;
+    font-weight: 700;
+}
+
+/*************** NAVIGATION LARGE SCREEN ***********************/
+
+@media (min-width: 550px) {
+    .menu {
+        display: block;
+        text-align: center;
+    }
+    header nav li {
+        background-color: #E3D26F;
+        display: inline-block;
+        border-bottom: none;
+    }
+    header nav li:first-child {
+        display: inline-block;
+    }
+    .expandedMenu {
+        color: #443730;
+        padding: 0 .5em;
+        margin-top: -50px;
+    }
+    .expandedMenu:hover,
+    .expandedMenu:active {
+        color: #588157;
+    }
+    .showMenu {
+        display: none;
+    }
+    /***************** end navigation *******************************/
+    header {
+        height: 2.5em;
+    }
+    .expandedMenu {
+        font-weight: 700;
+    }
+    .fa-home {
+        color: #588157;
+    }
+    .fa-home:hover,
+    .fa-home:active {
+        color: #443730;
+    }
 }

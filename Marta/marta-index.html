@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Marta's</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Life+Savers:400,700|Pangolin" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <p class="logo float-left">Tree of Life</p>
+        <nav>
+            <label for="showMenu" class="showMenu"><span class="fas fa-bars" aria-hidden="true"></span></label>
+            <input type="checkbox" id="showMenu" role="button">
+            <ul class="menu float-right">
+                <li class="menuChild"><a href="index.html" class="expandedMenu"><span class="fas fa-home"></span></a></li>
+                <li class="menuChild"><a href="#" class="expandedMenu">Documentation</a></li>
+                <li class="menuChild"><a href="#" class="expandedMenu">Examples</a></li>
+                <li class="menuChild"><a href="#" class="expandedMenu">Starting File</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Examples</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, sunt quam autem delectus nulla nesciunt, in ad quos maiores omnis neque, laboriosam labore deserunt, sapiente voluptatibus aliquam. Reprehenderit, possimus, perspiciatis.</p>
+
+        <button class="accordion">No Print</button>
+        <div class="panel">
+            <div class="panel-inside">
+                <p>This text will show up in the print mode.</p>
+                <p class="no-print">This text will not show up in the print mode.</p>
+            </div>
+        </div>
+
+        <button class="accordion">Quick Floats</button>
+        <div class="panel">
+            <div class="panel-inside">
+                <p class="float-left">Float Left</p>
+                <p class="float-right">Float Right</p>
+                <div class="clearfix"></div>
+                <p class="align-center">Align Center</p>
+            </div>
+        </div>
+
+        <button class="accordion">Buttons</button>
+        <div class="panel">
+            <div class="panel-inside">
+                <button class="btn btn-xs">X-SMALL</button>
+                <button class="btn btn-s">SMALL</button>
+                <button class="btn btn-m">MEDIUM</button>
+                <button class="btn btn-l">LARGE</button>
+                <button class="btn btn-l disabled">DISABLED</button>
+            </div>
+        </div>
+    </main>
+    <div class="clearfix"></div>
+    <footer>
+        <p>Copyright &copy; 2018 <span>Tree of Life</span></p>
+    </footer>
+
+    <script src="scripts/script.js" type="text/javascript"></script>
+</body>
+
+</html>
