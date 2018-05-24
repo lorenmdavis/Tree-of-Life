@@ -1,6 +1,12 @@
 <!--
 Headers: font-family: 'Raleway', sans-serif;
 Body copy: font-family: 'Lato', sans-serif;
+
+To Do:
+- sticky footer
+- figure out button on top of jumbotron
+
+Framework Names: blueprint
 -->
 
 
@@ -28,7 +34,7 @@ Body copy: font-family: 'Lato', sans-serif;
 <body>
 
     <header>
-        <p class="logo float-left">Tree of Life</p>
+        <h1 class="logo float-left">Tree of Life</h1>
         <nav>
             <label for="showMenu" class="showMenu"><span class="fas fa-bars" aria-hidden="true"></span></label>
             <input type="checkbox" id="showMenu" role="button">
@@ -41,42 +47,25 @@ Body copy: font-family: 'Lato', sans-serif;
         </nav>
     </header>
 
-    <div class="branch-full jumbotron">
-        <div class="m-space-three m-six leaf">
+    <div class="wrapper-full jumbotron">
+        <div class="col m-space-three m-six ">
             <p class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam officia nihil quod delectus totam. Error nesciunt impedit tenetur, blanditiis tempore minus aliquam magnam dolores, nulla atque voluptates fugiat eius quo!</p>
         </div>
     </div>
 
-    <div class="branch">
-        <div class="stem">
-            <div class="m-six l-four leaf">
+    <div class="wrapper">
+        <div class="row">
+            <div class="col m-six l-four">
                 <h4 class="center"><i class="fas fa-code"></i>Easy To Use</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni expedita nihil, illo iste inventore suscipit laborum repellat in dolore magnam quis enim ipsam architecto maiores sequi quia possimus obcaecati, provident.</p>
             </div>
-            <div class="m-six l-four leaf">
-                <h4 class="center"><i class="fas fa-paper-plane"></i>Lightweight</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni expedita nihil, illo iste inventore suscipit laborum repellat in dolore magnam quis enim ipsam architecto maiores sequi quia possimus obcaecati, provident.</p>
-            </div>
-            <div class="m-six l-four leaf">
+            <div class="col m-six l-four">
                 <h4 class="center"><i class="fas fa-th"></i>Grid System</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni expedita nihil, illo iste inventore suscipit laborum repellat in dolore magnam quis enim ipsam architecto maiores sequi quia possimus obcaecati, provident.</p>
             </div>
-            <div class="m-six l-four l-space-two leaf">
+            <div class="col m-twelve l-four">
                 <h4 class="center"><i class="fas fa-exchange-alt"></i>Responsive</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni expedita nihil, illo iste inventore suscipit laborum repellat in dolore magnam quis enim ipsam architecto maiores sequi quia possimus obcaecati, provident.</p>
-            </div>
-            <div class="m-six m-space-three l-space-zero l-four leaf">
-                <h4 class="center"><i class="far fa-money-bill-alt"></i>Free</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni expedita nihil, illo iste inventore suscipit laborum repellat in dolore magnam quis enim ipsam architecto maiores sequi quia possimus obcaecati, provident.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="branch-full">
-        <div class="stem">
-            <div class="m-full leaf story">
-                <p class="center">Want to know more about the original story of the tree of life and how we were inspired by this awesome tree?</p>
-                <h4 class="center"><a href="#">Original Story</a></h4>
             </div>
         </div>
     </div>
