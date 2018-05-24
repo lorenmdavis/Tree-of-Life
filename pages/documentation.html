@@ -1,348 +1,985 @@
+<!--Eliminate row hover color?-->
+<!--add media queries (fontAwesome) to grid documentation-->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>tol-docGrid</title>
+    <title>Documentation</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--link to Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Life+Savers:700|Pangolin" rel="stylesheet">
     <!--Link to custom CSS-->
-    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/treeOfLife.css">
-
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/docStyles.css">
+    <!--    Link to Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--    Link to jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!--Navigation Bar-->
+    <header>
+        <p class="logo float-left">Tree of Life</p>
+        <nav>
+            <label for="showMenu" class="showMenu"><span class="fas fa-bars" aria-hidden="true"></span></label>
+            <input type="checkbox" id="showMenu" role="button">
+            <ul class="menu float-right">
+                <li class="menuChild"><a href="index.html" class="expandedMenu"><span class="fas fa-home"></span></a></li>
+                <li class="menuChild"><a href="documentation.html" class="expandedMenu">Documentation</a></li>
+                <li class="menuChild"><a href="#" class="expandedMenu">Examples</a></li>
+                <li class="menuChild"><a href="#" class="expandedMenu">Starting File</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav>
-        <h1>Tree Of Life</h1>
-    </nav>
-    <!--    Grid Layout Explanation-->
-    <div class="branch outlineB">
-        <p>Each section of content is contained using the 'branch' class.</p>
-        <div class="stem outlineS">
-            <p>Columns are wrapped in rows using the 'stem' class.</p>
-            <div class="m-four leaf outlineL">
-                <p>Columns are wrapped in containers using the 'leaf' class.</p>
-            </div>
-            <div class="m-four leaf outlineL">
-                <p>There can be up to 12 columns per row.</p>
-            </div>
-            <div class="m-four leaf outlineL">
-                <p>Content is one column at small screen, and can expand at larger sizes.</p>
-            </div>
-        </div>
-    </div>
-    <!--Grid Framework Documentation-->
+    <!--Framework Documentation-->
     <div class="branch">
-        <h2>Grid System</h2>
         <div class="stem">
-            <div class="m-one leaf leafBGColor">
-                <h4>1</h4>
+            <div class="m-twelve leaf">
+                <h2 class="center">Documentation</h2>
+
+                <!--1. Get Started-->
+                <button class="accordion">1. Get Started</button>
+                <div class="panel">
+                    <div class="panel-inside">
+
+                        <h2>HTML</h2>
+                        <p>Enter description here...</p>
+                        <table class="table-full border-table">
+                            <tr>
+                                <th>HTML</th>
+                            </tr>
+                            <tr>
+                                <td><code>HTML Code</code></td>
+                            </tr>
+                        </table>
+
+                        <h2>CSS</h2>
+                        <p>Enter description here...</p>
+                        <table class="table-full border-table">
+                            <tr>
+                                <th>CSS</th>
+                            </tr>
+                            <tr>
+                                <td><code>CSS Code</code></td>
+                            </tr>
+                        </table>
+
+                        <h2>Javascript</h2>
+                        <p>Enter description here...</p>
+                        <table class="table-full border-table">
+                            <tr>
+                                <th>JS</th>
+                            </tr>
+                            <tr>
+                                <td><code>JS Code</code></td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+
+                <!--2. Grid Framework-->
+                <button class="accordion">2. Grid Framework</button>
+                <div class="panel">
+                    <div class="panel-inside">
+
+                        <!--Begin Grid Layout Explanation-->
+                        <h2>Framework Overview</h2>
+                        <p>Enter description here...</p>
+                        <div class="branch outlineB">
+
+                            <p>Each section of content is contained using the 'branch' class.</p>
+                            <div class="stem outlineS">
+                                <p>Columns are wrapped in rows using the 'stem' class.</p>
+                                <div class="m-four leaf outlineL">
+                                    <p>Columns are wrapped in containers using the 'leaf' class.</p>
+                                </div>
+                                <div class="m-four leaf outlineL">
+                                    <p>There can be up to 12 columns per row.</p>
+                                </div>
+                                <div class="m-four leaf outlineL">
+                                    <p>Content is one column at small screen, and can expand at larger sizes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END Grid layout-->
+                        <div class="clearfix"></div>
+
+                        <!--Begin Responsive Breakpoints-->
+                        <h2>Responsive Breakpoints</h2>
+                        <p>Enter description here...</p>
+                        <div class="branch">
+
+                            <table class="table-full border-table">
+                                <tr>
+                                    <th>Breakpoint</th>
+                                    <th>Media</th>
+                                </tr>
+                                <tr>
+                                    <td>Less than 750px</td>
+                                    <td>
+                                        <p><i class="fas fa-mobile-alt fa-2x"></i>Small</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Greater than 750px</td>
+                                    <td>
+                                        <p><i class="fas fa-tablet-alt fa-2x"></i>Medium</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Greater than 970px</td>
+                                    <td>
+                                        <p><i class="fas fa-desktop fa-2x"></i>Large</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Greater than 1170px</td>
+                                    <td>
+                                        <p><i class="fas fa-tv fa-2x"></i>Extra-Large</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--END Responsive Breakpoints-->
+                        <div class="clearfix"></div>
+
+                        <!--12 Col Grid-->
+                        <h2>12 Column Grid System</h2>
+                        <p>Enter description here...</p>
+                        <div class="branch">
+                            <div class="stem">
+                                <div class="m-one leaf leafBGColor">
+                                    <h4>1</h4>
+                                </div>
+                                <div class="m-one leaf leafBGColor">
+                                    <h4>1</h4>
+                                </div>
+                                <div class="m-one leaf leafBGColor">
+                                    <h4>1</h4>
+                                </div>
+                                <div class="m-one leaf leafBGColor">
+                                    <h4>1</h4>
+                                </div>
+                                <div class="m-one leaf leafBGColor">
+                                    <h4>1</h4>
+                                </div>
+                                <div class="m-one leaf leafBGColor">
+                                    <h4>1</h4>
+                                </div>
+                                <div class="m-one leaf leafBGColor">
+                                    <h4>1</h4>
+                                </div>
+                                <div class="m-one leaf leafBGColor">
+                                    <h4>1</h4>
+                                </div>
+                                <div class="m-one leaf leafBGColor">
+                                    <h4>1</h4>
+                                </div>
+                                <div class="m-one leaf leafBGColor">
+                                    <h4>1</h4>
+                                </div>
+                                <div class="m-one leaf leafBGColor">
+                                    <h4>1</h4>
+                                </div>
+                                <div class="m-one leaf leafBGColor">
+                                    <h4>1</h4>
+                                </div>
+                            </div>
+                            <div class="stem">
+                                <div class="m-two leaf leafBGColor">
+                                    <h4>2</h4>
+                                </div>
+                                <div class="m-two leaf leafBGColor">
+                                    <h4>2</h4>
+                                </div>
+                                <div class="m-two leaf leafBGColor">
+                                    <h4>2</h4>
+                                </div>
+                                <div class="m-two leaf leafBGColor">
+                                    <h4>2</h4>
+                                </div>
+                                <div class="m-two leaf leafBGColor">
+                                    <h4>2</h4>
+                                </div>
+                                <div class="m-two leaf leafBGColor">
+                                    <h4>2</h4>
+                                </div>
+                            </div>
+                            <div class="stem">
+                                <div class="m-three leaf leafBGColor">
+                                    <h4>3</h4>
+                                </div>
+                                <div class="m-three leaf leafBGColor">
+                                    <h4>3</h4>
+                                </div>
+                                <div class="m-three leaf leafBGColor">
+                                    <h4>3</h4>
+                                </div>
+                                <div class="m-three leaf leafBGColor">
+                                    <h4>3</h4>
+                                </div>
+                            </div>
+                            <div class="stem">
+                                <div class="m-four leaf leafBGColor">
+                                    <h4>4</h4>
+                                </div>
+                                <div class="m-four leaf leafBGColor">
+                                    <h4>4</h4>
+                                </div>
+                                <div class="m-four leaf leafBGColor">
+                                    <h4>4</h4>
+                                </div>
+                            </div>
+                            <div class="stem">
+                                <div class="m-five leaf leafBGColor">
+                                    <h4>5</h4>
+                                </div>
+                                <div class="m-five leaf leafBGColor">
+                                    <h4>5</h4>
+                                </div>
+                                <div class="m-two leaf leafBGColor">
+                                    <h4>2</h4>
+                                </div>
+                            </div>
+                            <div class="stem">
+                                <div class="m-six leaf leafBGColor">
+                                    <h4>6</h4>
+                                </div>
+                                <div class="m-six leaf leafBGColor">
+                                    <h4>6</h4>
+                                </div>
+                            </div>
+                            <div class="stem">
+                                <div class="m-seven leaf leafBGColor">
+                                    <h4>7</h4>
+                                </div>
+                                <div class="m-five leaf leafBGColor">
+                                    <h4>5</h4>
+                                </div>
+                            </div>
+                            <div class="stem">
+                                <div class="m-eight leaf leafBGColor">
+                                    <h4>8</h4>
+                                </div>
+                                <div class="m-four leaf leafBGColor">
+                                    <h4>4</h4>
+                                </div>
+                            </div>
+                            <div class="stem">
+                                <div class="m-nine leaf leafBGColor">
+                                    <h4>9</h4>
+                                </div>
+                                <div class="m-three leaf leafBGColor">
+                                    <h4>3</h4>
+                                </div>
+                            </div>
+                            <div class="stem">
+                                <div class="m-ten leaf leafBGColor">
+                                    <h4>10</h4>
+                                </div>
+                                <div class="m-two leaf leafBGColor">
+                                    <h4>2</h4>
+                                </div>
+                            </div>
+                            <div class="stem">
+                                <div class="m-eleven leaf leafBGColor">
+                                    <h4>11</h4>
+                                </div>
+                                <div class="m-one leaf leafBGColor">
+                                    <h4>1</h4>
+                                </div>
+                            </div>
+                            <div class="stem">
+                                <div class="m-twelve leaf leafBGColor">
+                                    <h4>12</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END 12 Col Grid-->
+
+                        <!--Grid Offsets-->
+                        <h2>Offsetting Columns</h2>
+                        <p>Enter description here...</p>
+                        <div class="branch">
+                            <div class="stem">
+                                <div class="m-space-one m-one leaf leafBGColor">
+                                    <h4>1</h4>
+                                </div>
+                                <div class="m-one leaf leafBGColor">
+                                    <h4>1</h4>
+                                </div>
+                                <div class="m-one leaf leafBGColor">
+                                    <h4>1</h4>
+                                </div>
+                                <div class="m-one leaf leafBGColor">
+                                    <h4>1</h4>
+                                </div>
+                                <div class="m-one leaf leafBGColor">
+                                    <h4>1</h4>
+                                </div>
+                                <div class="m-one leaf leafBGColor">
+                                    <h4>1</h4>
+                                </div>
+                                <div class="m-one leaf leafBGColor">
+                                    <h4>1</h4>
+                                </div>
+                                <div class="m-one leaf leafBGColor">
+                                    <h4>1</h4>
+                                </div>
+                                <div class="m-one leaf leafBGColor">
+                                    <h4>1</h4>
+                                </div>
+                                <div class="m-one leaf leafBGColor">
+                                    <h4>1</h4>
+                                </div>
+                                <div class="m-one leaf leafBGColor">
+                                    <h4>1</h4>
+                                </div>
+                            </div>
+                            <div class="stem">
+                                <div class="m-space-two m-two leaf leafBGColor">
+                                    <h4>2</h4>
+                                </div>
+                                <div class="m-two leaf leafBGColor">
+                                    <h4>2</h4>
+                                </div>
+                                <div class="m-two leaf leafBGColor">
+                                    <h4>2</h4>
+                                </div>
+                                <div class="m-two leaf leafBGColor">
+                                    <h4>2</h4>
+                                </div>
+                                <div class="m-two leaf leafBGColor">
+                                    <h4>2</h4>
+                                </div>
+                            </div>
+                            <div class="stem">
+                                <div class="m-space-three m-three leaf leafBGColor">
+                                    <h4>3</h4>
+                                </div>
+                                <div class="m-three leaf leafBGColor">
+                                    <h4>3</h4>
+                                </div>
+                                <div class="m-three leaf leafBGColor">
+                                    <h4>3</h4>
+                                </div>
+                            </div>
+                            <div class="stem">
+                                <div class="m-space-four m-four leaf leafBGColor">
+                                    <h4>4</h4>
+                                </div>
+                                <div class="m-four leaf leafBGColor">
+                                    <h4>4</h4>
+                                </div>
+                            </div>
+                            <div class="stem">
+                                <div class="m-space-five m-five leaf leafBGColor">
+                                    <h4>5</h4>
+                                </div>
+
+                                <div class="m-two leaf leafBGColor">
+                                    <h4>2</h4>
+                                </div>
+                            </div>
+                            <div class="stem">
+                                <div class="m-space-six m-six leaf leafBGColor">
+                                    <h4>6</h4>
+                                </div>
+                            </div>
+                            <div class="stem">
+                                <div class="m-space-seven m-five leaf leafBGColor">
+                                    <h4>5</h4>
+                                </div>
+                            </div>
+                            <div class="stem">
+                                <div class="m-space-eight m-four leaf leafBGColor">
+                                    <h4>4</h4>
+                                </div>
+                            </div>
+                            <div class="stem">
+                                <div class="m-space-nine m-three leaf leafBGColor">
+                                    <h4>3</h4>
+                                </div>
+                            </div>
+                            <div class="stem">
+                                <div class="m-space-ten m-two leaf leafBGColor">
+                                    <h4>2</h4>
+                                </div>
+
+                            </div>
+                            <div class="stem">
+                                <div class="m-space-eleven m-one leaf leafBGColor">
+                                    <h4>1</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END Grid Offsets-->
+
+                        <!--BEGIN Responsive Sizing-->
+                        <h2>Responsive Sizes</h2>
+                        <p>Enter description here...</p>
+                        <div class="branch">
+                            <div class="stem">
+                                <div class="m-six l-four xl-three leaf leafBGColor">
+                                    <h4>Section 1</h4>
+                                    <p>Small screen (red): 1 column</p>
+                                    <p>Medium screen(orange): 2 columns</p>
+                                    <p>Large screen (yellow): 3 columns</p>
+                                    <p>Extra Large screen (green) : 4 columns</p>
+                                </div>
+                                <div class="m-six l-four xl-three leaf leafBGColor">
+                                    <h4>Section 2</h4>
+                                    <p>Small screen (red): 1 column</p>
+                                    <p>Medium screen(orange): 2 columns</p>
+                                    <p>Large screen (yellow): 3 columns</p>
+                                    <p>Extra Large screen (green) : 4 columns</p>
+                                </div>
+                                <div class="m-six l-four xl-three leaf leafBGColor">
+                                    <h4>Section 3</h4>
+                                    <p>Small screen (red): 1 column</p>
+                                    <p>Medium screen(orange): 2 columns</p>
+                                    <p>Large screen (yellow): 3 columns</p>
+                                    <p>Extra Large screen (green) : 4 columns</p>
+                                </div>
+                                <div class="m-six l-four l-space-four xl-space-zero xl-three leaf leafBGColor">
+                                    <h4>Section 4</h4>
+                                    <p>Small screen (red): 1 column</p>
+                                    <p>Medium screen(orange): 2 columns</p>
+                                    <p>Large screen (yellow): 3 columns</p>
+                                    <p>Extra Large screen (green) : 4 columns</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END Responsive Sizing-->
+
+                        <!--                        Device Sizes Here-->
+
+                    </div>
+                </div>
+
+                <!--3. Text Styles-->
+                <button class="accordion">3. Text Styles</button>
+                <div class="panel">
+                    <div class="panel-inside">
+                        <table class="table-full border-table">
+                            <tr>
+                                <th>CSS</th>
+                                <th>Headings</th>
+                            </tr>
+                            <tr>
+                                <td>&lt;h1&gt;</td>
+                                <td>
+                                    <h1>H1 Heading</h1>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;h2&gt;</td>
+                                <td>
+                                    <h2>H2 Heading</h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;h3&gt;</td>
+                                <td>
+                                    <h3>H3 Heading</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;h4&gt;</td>
+                                <td>
+                                    <h4>H4 Heading</h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;h5&gt;</td>
+                                <td>
+                                    <h5>H5 Heading</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;h6&gt;</td>
+                                <td>
+                                    <h6>H6 Heading</h6>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>CSS</th>
+                                <th>Inline Text Styles</th>
+                            </tr>
+                            <tr>
+                                <td>&lt;p&gt;</td>
+                                <td>
+                                    <p>This is standard styled paragraph.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>.left</td>
+                                <td>
+                                    <p class="left">This aligns text left. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident consequatur ipsa, illum harum sapiente ducimus nesciunt iure perspiciatis veniam, distinctio nobis perferendis aut eos maiores vitae, soluta aliquid quis aperiam!</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>.right</td>
+                                <td>
+                                    <p class="right">This aligns text right. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident consequatur ipsa, illum harum sapiente ducimus nesciunt iure perspiciatis veniam, distinctio nobis perferendis aut eos maiores vitae, soluta aliquid quis aperiam!</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>.center</td>
+                                <td>
+                                    <p class="center">This aligns text center. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident consequatur ipsa, illum harum sapiente ducimus nesciunt iure perspiciatis veniam, distinctio nobis perferendis aut eos maiores vitae, soluta aliquid quis aperiam!</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>.bold</td>
+                                <td>
+                                    <p class="bold">This text is bold.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>.italic</td>
+                                <td>
+                                    <p class="italic">This text is italicized.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;cite&gt;</td>
+                                <td>
+                                    <p><cite>The Remarkable Baobab</cite> by Thomas Pakenham.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;code&gt;</td>
+                                <td>
+                                    <p><code>This is code.</code></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;var&gt;</td>
+                                <td>
+                                    <p><var>x + y = 10;</var></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;abbr&gt;</td>
+                                <td>
+                                    <p><abbr title="HyperText Markup Language">HTML</abbr></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;address&gt;</td>
+                                <td>
+                                    <p>Text below is an address; <address>Tree of Life<br />123 Main Street<br /> San Diego, Ca 92102</address></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>&lt;blockquote&gt;</p>
+                                </td>
+                                <td>
+                                    <p>This is a block quote:</p>
+                                    <blockquote cite="https://www.tripsavvy.com/fun-facts-about-the-baobab-tree-1454374">The baobab has many useful properties, which explains why it is widely known as the Tree of Life. It behaves like a giant succulent and up to 80% of the trunk is water. San bushmen used to rely on the trees as a valuable source of water when the rains failed and the rivers dried. A single tree can hold up to 4,500 liters (1,189 gallons) The baobab is a life-giver for African wildlife, too, often creating its very own ecosystem. It provides food and shelter for a myriad of species, from the tiniest insect to the mighty African elephant.</blockquote>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>.uppercase</td>
+                                <td>
+                                    <p class="uppercase">This text is has the class of 'uppercase' applied.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>.lowercase</td>
+                                <td>
+                                    <p class="lowercase">This text is has the class of 'lowercase' applied.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>.capitalize</td>
+                                <td>
+                                    <p class="capitalize">This text is has the class of 'capitalize' applied.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>CSS</th>
+                                <th>List Styles</th>
+                            </tr>
+                            <tr>
+                                <td>&lt;ul&gt;</td>
+                                <td>
+                                    <ul>
+                                        <li><i class="fa fa-minus" aria-hidden="true"></i> Item 01</li>
+                                        <li><i class="fa fa-minus" aria-hidden="true"></i> Item 02</li>
+                                        <li><i class="fa fa-minus" aria-hidden="true"></i> Item 03</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>&lt;ol&gt;</td>
+                                <td>
+                                    <ol>
+                                        <li>Item 01</li>
+                                        <li>Item 02</li>
+                                        <li>Item 03</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!--4. Table Styles-->
+                <button class="accordion">4. Tables</button>
+                <div class="panel">
+                    <div class="panel-inside">
+                        <!--                       Default Table-->
+                        <h2>Default Table</h2>
+                        <p>Default styling, rows highlight as user mouses over rows.</p>
+                        <table class="table-full">
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Age</th>
+                            </tr>
+                            <tr>
+                                <td>Jill</td>
+                                <td>Smith</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>Eve</td>
+                                <td>Jackson</td>
+                                <td>94</td>
+                            </tr>
+                            <tr>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>80</td>
+                            </tr>
+                        </table>
+                        <!--                        Striped Table-->
+                        <h2>Striped Table</h2>
+                        <p>Adds background color to odd numbered rows. Add 'striped' class to table element. </p>
+                        <table class="table-full striped">
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Age</th>
+                            </tr>
+                            <tr>
+                                <td>Jill</td>
+                                <td>Smith</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>Eve</td>
+                                <td>Jackson</td>
+                                <td>94</td>
+                            </tr>
+                            <tr>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>Jane</td>
+                                <td>Smith</td>
+                                <td>42</td>
+                            </tr>
+                        </table>
+
+                        <!--Bordered Table-->
+                        <h2>Bordered Table</h2>
+                        <p>Adds border to sides and bottom. Add '.border-table' class to table element. </p>
+                        <table class="table-full border-table">
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Age</th>
+                            </tr>
+                            <tr>
+                                <td>Jill</td>
+                                <td>Smith</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>Eve</td>
+                                <td>Jackson</td>
+                                <td>94</td>
+                            </tr>
+                            <tr>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>Jane</td>
+                                <td>Smith</td>
+                                <td>42</td>
+                            </tr>
+                        </table>
+
+                        <!--Responsive Table-->
+
+                        <h2>Responsive Table</h2>
+                        <p>Adds horizontal scroll bars when table exceeds screen size. Wrap table in a container div with a class of '.table-responsive'</p>
+                        <div class="table-responsive">
+                            <table class="table-full">
+                                <tr>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Points</th>
+                                    <th>Points</th>
+                                    <th>Points</th>
+                                    <th>Points</th>
+                                    <th>Points</th>
+                                    <th>Points</th>
+                                    <th>Points</th>
+                                    <th>Points</th>
+                                    <th>Points</th>
+                                    <th>Points</th>
+                                </tr>
+                                <tr>
+                                    <td>Jill</td>
+                                    <td>Smith</td>
+                                    <td>50</td>
+                                    <td>50</td>
+                                    <td>50</td>
+                                    <td>50</td>
+                                    <td>50</td>
+                                    <td>50</td>
+                                    <td>50</td>
+                                    <td>50</td>
+                                    <td>50</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>Eve</td>
+                                    <td>Jackson</td>
+                                    <td>94</td>
+                                    <td>94</td>
+                                    <td>94</td>
+                                    <td>94</td>
+                                    <td>94</td>
+                                    <td>94</td>
+                                    <td>94</td>
+                                    <td>94</td>
+                                    <td>94</td>
+                                    <td>94</td>
+                                </tr>
+                                <tr>
+                                    <td>Adam</td>
+                                    <td>Johnson</td>
+                                    <td>67</td>
+                                    <td>67</td>
+                                    <td>67</td>
+                                    <td>67</td>
+                                    <td>67</td>
+                                    <td>67</td>
+                                    <td>67</td>
+                                    <td>67</td>
+                                    <td>67</td>
+                                    <td>67</td>
+                                </tr>
+                            </table>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <!--5. Forms (starter table)-->
+                <button class="accordion">5. Forms</button>
+                <div class="panel">
+                    <div class="panel-inside">
+                        <h2>Title</h2>
+                        <p>Enter description here...</p>
+                        <table class="table-full border-table">
+                            <tr>
+                                <th>CSS</th>
+                                <th>Example</th>
+                            </tr>
+                            <tr>
+                                <td>code</td>
+                                <td>example</td>
+                            </tr>
+                            <tr>
+                                <td>code</td>
+                                <td>example</td>
+                            </tr>
+                            <tr>
+                                <td>code</td>
+                                <td>example</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!--6. Buttons-->
+                <button class="accordion">6. Buttons</button>
+                <div class="panel">
+                    <div class="panel-inside">
+                        <h2>Buttons</h2>
+                        <p>Enter description here...</p>
+                        <table class="table-full border-table">
+                            <tr>
+                                <th>CSS</th>
+                                <th>Example</th>
+                            </tr>
+                            <tr>
+                                <td>.btn .btn-xs</td>
+                                <td><button class="btn btn-xs">X-SMALL</button></td>
+                            </tr>
+                            <tr>
+                                <td>.btn .btn-s</td>
+                                <td><button class="btn btn-s">SMALL</button></td>
+                            </tr>
+                            <tr>
+                                <td>.btn .btn-m</td>
+                                <td> <button class="btn btn-m">MEDIUM</button></td>
+                            </tr>
+                            <tr>
+                                <td>.btn .btn-l</td>
+                                <td><button class="btn btn-l">LARGE</button></td>
+                            </tr>
+                            <tr>
+                                <td>.btn .disabled</td>
+                                <td><button class="btn btn-l disabled">DISABLED</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!--7. Images-->
+                <button class="accordion">7. Images</button>
+                <div class="panel">
+                    <div class="panel-inside">
+                        <h2>Images</h2>
+                        <p>Enter description here...</p>
+                        <table class="table-full border-table">
+                            <tr>
+                                <th>CSS</th>
+                                <th>Example</th>
+                            </tr>
+                            <tr>
+                                <td>code</td>
+                                <td>example</td>
+                            </tr>
+                            <tr>
+                                <td>code</td>
+                                <td>example</td>
+                            </tr>
+                            <tr>
+                                <td>code</td>
+                                <td>example</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!--8. Helper Classes-->
+                <button class="accordion">8. Helper Classes</button>
+                <div class="panel">
+                    <div class="panel-inside">
+
+                        <!--Quick Floats-->
+                        <h2>Quick Floats</h2>
+                        <p>Enter description here...</p>
+                        <table class="table-full border-table">
+                            <tr>
+                                <th>CSS</th>
+                                <th>Example</th>
+                            </tr>
+                            <tr>
+                                <td>.float-left</td>
+                                <td>
+                                    <p class="float-left">Float Left</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>.float-right</td>
+                                <td>
+                                    <p class="float-right">Float Right</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>.align-center</td>
+                                <td>
+                                    <p class="align-center">Align Center</p>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <!--No Print-->
+                        <h2>No Print</h2>
+                        <p>Enter description here...</p>
+                        <table class="table-full border-table">
+                            <tr>
+                                <th>CSS</th>
+                                <th>Example</th>
+                            </tr>
+                            <tr>
+                                <td>default</td>
+                                <td>
+                                    <p>This text will show up in the print mode.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>.no-print</td>
+                                <td>
+                                    <p class="no-print">This text will not show up in the print mode.</p>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+                <!--9. Icons-->
+                <button class="accordion">9. Icons</button>
+                <div class="panel">
+                    <div class="panel-inside">
+
+                        <h2>Title</h2>
+                        <p>Enter description here...</p>
+                        <table class="table-full border-table">
+                            <tr>
+                                <th>CSS</th>
+                                <th>Example</th>
+                            </tr>
+                            <tr>
+                                <td>code</td>
+                                <td>example</td>
+                            </tr>
+                            <tr>
+                                <td>code</td>
+                                <td>example</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
             </div>
-            <div class="m-one leaf leafBGColor">
-                <h4>1</h4>
-            </div>
-            <div class="m-one leaf leafBGColor">
-                <h4>1</h4>
-            </div>
-            <div class="m-one leaf leafBGColor">
-                <h4>1</h4>
-            </div>
-            <div class="m-one leaf leafBGColor">
-                <h4>1</h4>
-            </div>
-            <div class="m-one leaf leafBGColor">
-                <h4>1</h4>
-            </div>
-            <div class="m-one leaf leafBGColor">
-                <h4>1</h4>
-            </div>
-            <div class="m-one leaf leafBGColor">
-                <h4>1</h4>
-            </div>
-            <div class="m-one leaf leafBGColor">
-                <h4>1</h4>
-            </div>
-            <div class="m-one leaf leafBGColor">
-                <h4>1</h4>
-            </div>
-            <div class="m-one leaf leafBGColor">
-                <h4>1</h4>
-            </div>
-            <div class="m-one leaf leafBGColor">
-                <h4>1</h4>
-            </div>
+            <!--  END Leaf-->
         </div>
-        <div class="stem">
-            <div class="m-two leaf leafBGColor">
-                <h4>2</h4>
-            </div>
-            <div class="m-two leaf leafBGColor">
-                <h4>2</h4>
-            </div>
-            <div class="m-two leaf leafBGColor">
-                <h4>2</h4>
-            </div>
-            <div class="m-two leaf leafBGColor">
-                <h4>2</h4>
-            </div>
-            <div class="m-two leaf leafBGColor">
-                <h4>2</h4>
-            </div>
-            <div class="m-two leaf leafBGColor">
-                <h4>2</h4>
-            </div>
-        </div>
-        <div class="stem">
-            <div class="m-three leaf leafBGColor">
-                <h4>3</h4>
-            </div>
-            <div class="m-three leaf leafBGColor">
-                <h4>3</h4>
-            </div>
-            <div class="m-three leaf leafBGColor">
-                <h4>3</h4>
-            </div>
-            <div class="m-three leaf leafBGColor">
-                <h4>3</h4>
-            </div>
-        </div>
-        <div class="stem">
-            <div class="m-four leaf leafBGColor">
-                <h4>4</h4>
-            </div>
-            <div class="m-four leaf leafBGColor">
-                <h4>4</h4>
-            </div>
-            <div class="m-four leaf leafBGColor">
-                <h4>4</h4>
-            </div>
-        </div>
-        <div class="stem">
-            <div class="m-five leaf leafBGColor">
-                <h4>5</h4>
-            </div>
-            <div class="m-five leaf leafBGColor">
-                <h4>5</h4>
-            </div>
-            <div class="m-two leaf leafBGColor">
-                <h4>2</h4>
-            </div>
-        </div>
-        <div class="stem">
-            <div class="m-six leaf leafBGColor">
-                <h4>6</h4>
-            </div>
-            <div class="m-six leaf leafBGColor">
-                <h4>6</h4>
-            </div>
-        </div>
-        <div class="stem">
-            <div class="m-seven leaf leafBGColor">
-                <h4>7</h4>
-            </div>
-            <div class="m-five leaf leafBGColor">
-                <h4>5</h4>
-            </div>
-        </div>
-        <div class="stem">
-            <div class="m-eight leaf leafBGColor">
-                <h4>8</h4>
-            </div>
-            <div class="m-four leaf leafBGColor">
-                <h4>4</h4>
-            </div>
-        </div>
-        <div class="stem">
-            <div class="m-nine leaf leafBGColor">
-                <h4>9</h4>
-            </div>
-            <div class="m-three leaf leafBGColor">
-                <h4>3</h4>
-            </div>
-        </div>
-        <div class="stem">
-            <div class="m-ten leaf leafBGColor">
-                <h4>10</h4>
-            </div>
-            <div class="m-two leaf leafBGColor">
-                <h4>2</h4>
-            </div>
-        </div>
-        <div class="stem">
-            <div class="m-eleven leaf leafBGColor">
-                <h4>11</h4>
-            </div>
-            <div class="m-one leaf leafBGColor">
-                <h4>1</h4>
-            </div>
-        </div>
-        <div class="stem">
-            <div class="m-twelve leaf leafBGColor">
-                <h4>12</h4>
-            </div>
-        </div>
+        <!--  END Stem-->
     </div>
-    <hr class="clearIt" />
-    <!--BEGIN offsets-->
-    <div class="branch">
-        <h2>Offsetting</h2>
-        <div class="stem">
-            <div class="m-space-one m-one leaf leafBGColor">
-                <h4>1</h4>
-            </div>
-            <div class="m-one leaf leafBGColor">
-                <h4>1</h4>
-            </div>
-            <div class="m-one leaf leafBGColor">
-                <h4>1</h4>
-            </div>
-            <div class="m-one leaf leafBGColor">
-                <h4>1</h4>
-            </div>
-            <div class="m-one leaf leafBGColor">
-                <h4>1</h4>
-            </div>
-            <div class="m-one leaf leafBGColor">
-                <h4>1</h4>
-            </div>
-            <div class="m-one leaf leafBGColor">
-                <h4>1</h4>
-            </div>
-            <div class="m-one leaf leafBGColor">
-                <h4>1</h4>
-            </div>
-            <div class="m-one leaf leafBGColor">
-                <h4>1</h4>
-            </div>
-            <div class="m-one leaf leafBGColor">
-                <h4>1</h4>
-            </div>
-            <div class="m-one leaf leafBGColor">
-                <h4>1</h4>
-            </div>
-        </div>
-        <div class="stem">
-            <div class="m-space-two m-two leaf leafBGColor">
-                <h4>2</h4>
-            </div>
-            <div class="m-two leaf leafBGColor">
-                <h4>2</h4>
-            </div>
-            <div class="m-two leaf leafBGColor">
-                <h4>2</h4>
-            </div>
-            <div class="m-two leaf leafBGColor">
-                <h4>2</h4>
-            </div>
-            <div class="m-two leaf leafBGColor">
-                <h4>2</h4>
-            </div>
-        </div>
-        <div class="stem">
-            <div class="m-space-three m-three leaf leafBGColor">
-                <h4>3</h4>
-            </div>
-            <div class="m-three leaf leafBGColor">
-                <h4>3</h4>
-            </div>
-            <div class="m-three leaf leafBGColor">
-                <h4>3</h4>
-            </div>
-        </div>
-        <div class="stem">
-            <div class="m-space-four m-four leaf leafBGColor">
-                <h4>4</h4>
-            </div>
-            <div class="m-four leaf leafBGColor">
-                <h4>4</h4>
-            </div>
-        </div>
-        <div class="stem">
-            <div class="m-space-five m-five leaf leafBGColor">
-                <h4>5</h4>
-            </div>
+    <!--  END Branch-->
 
-            <div class="m-two leaf leafBGColor">
-                <h4>2</h4>
-            </div>
-        </div>
-        <div class="stem">
-            <div class="m-space-six m-six leaf leafBGColor">
-                <h4>6</h4>
-            </div>
-        </div>
-        <div class="stem">
-            <div class="m-space-seven m-five leaf leafBGColor">
-                <h4>5</h4>
-            </div>
-        </div>
-        <div class="stem">
-            <div class="m-space-eight m-four leaf leafBGColor">
-                <h4>4</h4>
-            </div>
-        </div>
-        <div class="stem">
-            <div class="m-space-nine m-three leaf leafBGColor">
-                <h4>3</h4>
-            </div>
-        </div>
-        <div class="stem">
-            <div class="m-space-ten m-two leaf leafBGColor">
-                <h4>2</h4>
-            </div>
-
-        </div>
-        <div class="stem">
-            <div class="m-space-eleven m-one leaf leafBGColor">
-                <h4>1</h4>
-            </div>
-        </div>
-    </div>
-    <!--END offsets-->
-    <hr class="clearIt" />
-
-    <!--BEGIN Responsive Sizing-->
-
-    <div class="branch">
-        <h2>Responsive Sizes</h2>
-        <div class="stem">
-            <div class="m-six l-four xl-three leaf leafBGColor">
-                <h4>Section 1</h4>
-                <p>Small screen (red): 1 column</p>
-                <p>Medium screen(orange): 2 columns</p>
-                <p>Large screen (yellow): 3 columns</p>
-                <p>Extra Large screen (green) : 4 columns</p>
-            </div>
-            <div class="m-six l-four xl-three leaf leafBGColor">
-                <h4>Section 2</h4>
-                <p>Small screen (red): 1 column</p>
-                <p>Medium screen(orange): 2 columns</p>
-                <p>Large screen (yellow): 3 columns</p>
-                <p>Extra Large screen (green) : 4 columns</p>
-            </div>
-            <div class="m-six l-four xl-three leaf leafBGColor">
-                <h4>Section 3</h4>
-                <p>Small screen (red): 1 column</p>
-                <p>Medium screen(orange): 2 columns</p>
-                <p>Large screen (yellow): 3 columns</p>
-                <p>Extra Large screen (green) : 4 columns</p>
-            </div>
-            <div class="m-six l-four l-space-four xl-space-zero xl-three leaf leafBGColor">
-                <h4>Section 4</h4>
-                <p>Small screen (red): 1 column</p>
-                <p>Medium screen(orange): 2 columns</p>
-                <p>Large screen (yellow): 3 columns</p>
-                <p>Extra Large screen (green) : 4 columns</p>
-            </div>
-        </div>
-    </div>
-    <!--END Responsive Sizing-->
-
+    <footer class="clearIt">
+        <p>Copyright &copy; 2018 Tree of Life</p>
+    </footer>
+    <script src="../scripts/script.js" type="text/javascript"></script>
 </body>
 
 </html>
