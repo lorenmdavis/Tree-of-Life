@@ -5,6 +5,7 @@ Body copy: font-family: 'Lato', sans-serif;
 To Do:
 - sticky footer
 - figure out button on top of jumbotron
+- setup fonts
 
 Framework Names: blueprint
 -->
@@ -22,7 +23,7 @@ Framework Names: blueprint
     <!--link to Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
     <!--Link to custom CSS-->
-    <link rel="stylesheet" href="../css/treeOfLife.css">
+    <link rel="stylesheet" href="../css/tol-Loren.css">
     <link rel="stylesheet" href="../css/main.css">
     <!--    Link to Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -33,6 +34,7 @@ Framework Names: blueprint
 
 <body>
 
+    <!--Navigation Bar-->
     <header>
         <h1 class="logo float-left">Tree of Life</h1>
         <nav>
@@ -47,12 +49,20 @@ Framework Names: blueprint
         </nav>
     </header>
 
-    <div class="wrapper-full jumbotron">
-        <div class="col m-space-three m-six ">
-            <p class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam officia nihil quod delectus totam. Error nesciunt impedit tenetur, blanditiis tempore minus aliquam magnam dolores, nulla atque voluptates fugiat eius quo!</p>
+    <!--   Intro text & download button-->
+    <div class="wrapper">
+        <div class="row intro">
+            <div class="col m-space-two m-eight">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam officia nihil quod delectus totam. Error nesciunt impedit tenetur, blanditiis tempore minus aliquam magnam dolores, nulla atque voluptates fugiat eius quo!</p>
+                <button class="btn btn-s downloadBtn">Download</button>
+            </div>
         </div>
     </div>
 
+    <!--Image Jumbotron-->
+    <div class="wrapper-full jumbotron"></div>
+
+    <!--Framework Features-->
     <div class="wrapper">
         <div class="row">
             <div class="col m-six l-four">
@@ -63,7 +73,7 @@ Framework Names: blueprint
                 <h4 class="center"><i class="fas fa-th"></i>Grid System</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni expedita nihil, illo iste inventore suscipit laborum repellat in dolore magnam quis enim ipsam architecto maiores sequi quia possimus obcaecati, provident.</p>
             </div>
-            <div class="col m-twelve l-four">
+            <div class="col m-twelve l-four last-col">
                 <h4 class="center"><i class="fas fa-exchange-alt"></i>Responsive</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni expedita nihil, illo iste inventore suscipit laborum repellat in dolore magnam quis enim ipsam architecto maiores sequi quia possimus obcaecati, provident.</p>
             </div>
@@ -73,6 +83,8 @@ Framework Names: blueprint
     <footer class="clearIt">
         <p>Copyright &copy; 2018 Tree of Life</p>
     </footer>
+
+    <!--    Link to JavaScript-->
     <script src="../scripts/script.js" type="text/javascript"></script>
 </body>
 
