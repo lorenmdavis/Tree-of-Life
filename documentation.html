@@ -1,0 +1,45 @@
+<!-- NAVIGATION -->
+<nav><!-- we need two sets of unordered lists one for mobile and one for desktop -->
+    <button class="bars"><span class="fas fa-bars"></span></button> <!-- 3 little lines for the hamburger menu -->
+    <ul class="menu-small"> <!-- unordered list for mobile version -->
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Examples</a></li>
+          <li><a href="#">Starting File</a></li>
+    </ul>
+    <div class="clearfix"></div> <!-- we need this clearfix otherwise the content will overlap with the menu -->
+    <ul class="menu-large"> <!-- unordered list for desktop version -->
+          <!-- the li elements will appear on the left, if you want them to appear on the right just add .menu-large{text-align: right;} to your css file -->
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Examples</a></li>
+          <li><a href="#">Starting File</a></li>
+    </ul>
+</nav>
+
+
+<!-- ACCORDION -->
+<button class="accordion">subject</button>
+<div class="panel">
+    <div class="panel-inside">
+        <!-- tags you want to add for example <p>Hello World!</p> -->
+    </div>
+</div>
+
+
+<!-- BUTTONS -->
+<button class="btn btn-m"></button> <!-- for buttons, you always need to add .btn class and then put the size you want (there are 4 sizes: .btn-xs, .btn-s, .btn-m, .btn-l) and there's .disabled if you want to disable the button -->
+
+
+<!-- CLEARFIX -->
+<p class="clearfix"></p> <!-- clear the elements after floating -->
+
+
+<!-- QUICKFLOATS -->
+<p class="float-left"></p> <!-- float left -->
+<p class="float-right"></p> <!-- float right -->
+<body class="align-center"></body> <!-- align the content in the middle -->
+
+
+<!-- NO PRINT -->
+<p class="no-print"></p> <!-- element won't show up in the print mode -->
