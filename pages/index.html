@@ -1,59 +1,55 @@
-<!--
-Headers: font-family: 'Raleway', sans-serif;
-Body copy: font-family: 'Lato', sans-serif;
-
-To Do:
-- sticky footer
-- figure out button on top of jumbotron
-- setup fonts
-
-Framework Names: blueprint
--->
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Tree of Life</title>
+    <title>Framework</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--link to Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
     <!--Link to custom CSS-->
-    <link rel="stylesheet" href="../css/tol-Loren.css">
     <link rel="stylesheet" href="../css/main.css">
-    <!--    Link to Font Awesome-->
+    <!--Link to Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <!--    Link to jQuery-->
+    <!--Link to jQuery-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
 
-    <!--Navigation Bar-->
-    <header>
-        <h1 class="logo float-left">Tree of Life</h1>
-        <nav>
-            <label for="showMenu" class="showMenu"><span class="fas fa-bars" aria-hidden="true"></span></label>
-            <input type="checkbox" id="showMenu" role="button">
-            <ul class="menu float-right">
-                <li class="menuChild"><a href="index.html" class="expandedMenu"><span class="fas fa-home"></span></a></li>
-                <li class="menuChild"><a href="documentation.html" class="expandedMenu">Documentation</a></li>
-                <li class="menuChild"><a href="#" class="expandedMenu">Examples</a></li>
-                <li class="menuChild"><a href="#" class="expandedMenu">Starting File</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- NAVIGATION -->
+    <nav>
+        <!-- we need two sets of unordered lists one for mobile and one for desktop -->
+        <button class="bars"><span class="fas fa-bars"></span></button>
+        <!-- 3 little lines for the hamburger menu -->
+        <ul class="menu-small">
+            <!-- unordered list for mobile version -->
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Examples</a></li>
+            <li><a href="#">Starting File</a></li>
+        </ul>
+        <div class="clearfix"></div>
+        <!-- we need this clearfix otherwise the content will overlap with the menu -->
+        <ul class="menu-large">
+            <!-- unordered list for desktop version -->
+            <!-- the li elements will appear on the left, if you want them to appear on the right just add .menu-large{text-align: right;} to your css file -->
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Examples</a></li>
+            <li><a href="#">Starting File</a></li>
+        </ul>
+    </nav>
 
-    <!--   Intro text & download button-->
+    <!--Intro text & download button-->
     <div class="wrapper">
-        <div class="row intro">
-            <div class="col m-space-two m-eight">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam officia nihil quod delectus totam. Error nesciunt impedit tenetur, blanditiis tempore minus aliquam magnam dolores, nulla atque voluptates fugiat eius quo!</p>
+        <div class="row">
+            <div class="col intro-container">
+                <h1 class="intro-headline">Framework</h1>
+                <p class="intro-p">Framework is a CSS/JS framework that helps you create a full-featured web application. It's easy, fast, and fun to use.
+                </p>
                 <button class="btn btn-s downloadBtn">Download</button>
             </div>
         </div>
@@ -63,28 +59,28 @@ Framework Names: blueprint
     <div class="wrapper-full jumbotron"></div>
 
     <!--Framework Features-->
-    <div class="wrapper">
+    <div class="wrapper group footer-space">
         <div class="row">
             <div class="col m-six l-four">
-                <h4 class="center"><i class="fas fa-code"></i>Easy To Use</h4>
+                <h4 class="center-text"><span class="fas fa-code"></span>Easy To Use</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni expedita nihil, illo iste inventore suscipit laborum repellat in dolore magnam quis enim ipsam architecto maiores sequi quia possimus obcaecati, provident.</p>
             </div>
             <div class="col m-six l-four">
-                <h4 class="center"><i class="fas fa-th"></i>Grid System</h4>
+                <h4 class="center-text"><span class="fas fa-th"></span>Grid System</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni expedita nihil, illo iste inventore suscipit laborum repellat in dolore magnam quis enim ipsam architecto maiores sequi quia possimus obcaecati, provident.</p>
             </div>
-            <div class="col m-twelve l-four last-col">
-                <h4 class="center"><i class="fas fa-exchange-alt"></i>Responsive</h4>
+            <div class="col m-twelve l-four">
+                <h4 class="center-text"><span class="fas fa-exchange-alt"></span>Responsive</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni expedita nihil, illo iste inventore suscipit laborum repellat in dolore magnam quis enim ipsam architecto maiores sequi quia possimus obcaecati, provident.</p>
             </div>
         </div>
     </div>
 
-    <footer class="clearIt">
-        <p>Copyright &copy; 2018 Tree of Life</p>
+    <footer>
+        <p>&copy; 2018</p>
     </footer>
 
-    <!--    Link to JavaScript-->
+    <!--Link to JavaScript-->
     <script src="../scripts/script.js" type="text/javascript"></script>
 </body>
 

@@ -1,51 +1,106 @@
 /*
-fonts:
-    font-family: Arial, sans-serif;
-    font-family: 'Life Savers', cursive;
-    font-family: 'Pangolin', cursive;
 
-colors:
-    sunshine: #E3D26F
-    water: #CEE5F2
-    plants: #588157
-    soil: #443730
-    Gray: #656565
+TABLE OF CONTENTS:
+1)  RESET ---------------------------------- Line 038
+2)  NO PRINT ------------------------------- Line 137 
+3)  CLEARFIX ------------------------------- Line 146 
+4)  QUICKFLOATS ---------------------------- Line 156 
+5)  FLOAT CONTAINER ------------------------ Line 175 
+6)  NAVIGATION FOR MOBILE ------------------ Line 191 
+7)  CONTAINERS ----------------------------- Line 234 
+8)  GRID ----------------------------------- Line 257 
+9)  JUMBOTRON ------------------------------ Line 269 
+10)  FOOTER -------------------------------- Line 312 
+11)  BUTTONS ------------------------------- Line 331 
+12)  ACCORDION ----------------------------- Line 392 
+13) TYPOGRAPHY ----------------------------- Line 436 
+14) LISTS ---------------------------------- Line 551 
+15) LINKS ---------------------------------- Line 558 
+16) TABLES --------------------------------- Line 568 
+17) IMAGES --------------------------------- Line 614 
+18) FORMS ---------------------------------- Line 741 
+19) NAVIGATION FOR DESKTOP ----------------- Line 952 
+20) GRID FOR MEDIUM SCREEN ----------------- Line 973 
+21) OFFSET FOR MEDIUM SCREEN --------------- Line 1021
+22) GRID FOR LARGE SCREEN ------------------ Line 1061
+23) OFFSET FOR LARGE SCREEN ---------------- Line 1105
+24) GRID FOR X-LARGE SCREEN ---------------- Line 1148
+25) OFFSET FOR X-LARGE SCREEN -------------- Line 1191
+
+BREAK POINTS:
+1) SMALL (DEFAULT)
+2) MEDIUM (750px) -------------------------- Line 950
+3) LARGE (970px) --------------------------- Line 1059
+4) X-LARGE (1170px) ------------------------ Line 1146
+
 */
 
-/****************** R E S E T *********************/
+/****************** RESET *********************/
 
 * {
+    margin: 0;
+    padding: 0;
     border: 0;
     box-sizing: border-box;
     font-size: 100%;
-    font-weight: normal;
+    font: inherit;
     line-height: 1;
-    margin: 0;
-    padding: 0;
     vertical-align: baseline;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 article,
 aside,
-details,
-figcaption,
 figure,
 footer,
 header,
-menu,
+main,
 nav,
-section {
+section,
+video,
+audio {
     display: block;
 }
 
-ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
 ul {
     list-style: none;
 }
 
-img {
+img,
+audio,
+video {
     max-width: 100%;
     height: auto;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+    margin: 0;
 }
 
 table {
@@ -53,7 +108,31 @@ table {
     border-spacing: 0;
 }
 
-/************* end reset *******************/
+td,
+th {
+    padding: 0;
+    text-align: left;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+/* Remove the text shadow on text selections */
+
+::-moz-selection {
+    background-color: #b3d4fc;
+    color: #000000;
+    text-shadow: none;
+}
+
+::selection {
+    background-color: #b3d4fc;
+    color: #000000;
+    text-shadow: none;
+}
 
 /**************** NO PRINT *******************/
 
@@ -64,8 +143,6 @@ table {
     }
 }
 
-/************** end no print ****************/
-
 /************** CLEARFIX *********************/
 
 .clearfix {
@@ -75,8 +152,6 @@ table {
     height: 0;
     clear: both;
 }
-
-/************** end clearfix ****************/
 
 /**************** QUICKFLOATS ***************/
 
@@ -90,112 +165,167 @@ table {
 
 .align-center {
     display: block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
-/*************** end quickfloats ************/
-
-/*********** NAVIGATION SMALL SCREEN *************/
-
-.menu {
-    list-style-type: none;
-    display: none;
+.float-none {
+    float: none;
 }
 
-.menuChild {
-    background-color: #443730;
-    text-align: center;
-    border-bottom: solid 1px #E3D26F;
+/**************** FLOAT CONTAINER ***************/
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
 }
 
-.menuChild:first-child {
-    margin-top: .5em;
+.group:after {
+    clear: both;
 }
 
-.menuChild:last-child {
-    border-bottom: none;
+.group {
+    clear: both;
 }
 
-.expandedMenu {
-    padding: .75em 5em;
-    display: block;
-    color: #E3D26F;
-    text-decoration: none;
-}
+/*********** NAVIGATION FOR MOBILE *************/
 
-.expandedMenu:active {
-    background-color: #E3D26F;
-    color: #443730;
-}
-
-nav input[type=checkbox] {
-    display: none;
-}
-
-nav input[type=checkbox]:checked ~ ul.menu {
-    display: block;
-}
-
-.showMenu {
-    background-color: #E3D26F;
-    text-align: right;
-    padding: .25em;
-    display: block;
+.bars {
+    float: right;
+    font-size: 1.5rem;
+    padding: .3rem;
+    margin: .5rem 1rem 0 0;
+    border-radius: .5rem;
+    color: #666;
+    background-color: transparent;
+    border: none;
     cursor: pointer;
 }
 
-.fa-bars {
-    color: #443730;
-    font-size: 1.1em;
+.bars:focus {
+    outline: 0;
 }
 
-/**************** end nav ************************/
-
-body {
-    font-family: Arial, sans-serif;
+.menu-small {
+    text-align: left;
+    clear: right;
+    list-style-type: none;
 }
 
-header {
-    background-color: #E3D26F;
-    height: 15%;
-    padding: .5em 4em;
-    -webkit-box-shadow: 0px 5px 5px 0px rgba(102, 102, 102, 0.3);
-    -moz-box-shadow: 0px 5px 5px 0px rgba(102, 102, 102, 0.3);
-    box-shadow: 0px 5px 5px 0px rgba(102, 102, 102, 0.3);
+.menu-small li {
+    background-color: #eee;
+    border: solid 1px #ccc;
+    padding: .75rem;
 }
 
-header nav li:first-child {
+.menu-small a {
+    text-decoration: none;
+    color: #222;
+}
+
+.menu-small a:hover {
+    color: #666;
+}
+
+.menu-large {
     display: none;
 }
 
-header nav li:nth-child(2) {
-    margin-top: .5em;
-}
+/**************** CONTAINERS *****************/
 
-.logo {
-    font-family: 'Life Savers', cursive;
-    font-weight: 700;
-    font-size: 1.4em;
-}
+/* Container */
 
-main {
-    width: 75%;
+.wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
     margin: 0 auto;
-    padding: .75em 0;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-main h2 {
-    font-family: 'Pangolin', cursive;
-    color: #443730;
-    font-size: 2em;
-    padding-bottom: .3em;
+/* Full width container */
+
+.wrapper-full {
+    position: relative;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
-main p {
-    color: #656565;
-    padding-bottom: .75em;
+/***************** GRID **********************/
+
+/* Column */
+
+.col {
+    width: 100%;
+    float: left;
+    padding: 1%;
+    margin-top: 2%;
+    box-sizing: border-box;
+}
+
+/************** JUMBOTRON **********************/
+
+/* Full width image container */
+
+.jumbotron {
+    background-image: url('../images/37192741544_487d322480_k.jpg');
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+/* Wraps around text in jumbotron */
+
+.intro-container {
+    height: 250px;
+    margin: 25px 0 0 0;
+    padding: 50px 0;
+}
+
+/* Intro headline */
+
+.intro-headline {
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+/* Intro paragraph */
+
+.intro-p {
+    color: white;
+    font-size: 1.125em;
+    line-height: 1.25;
+    padding: 5px 0;
+    width: 80%;
+    margin: 2% 10%;
+    text-align: center;
+}
+
+/************** FOOTER **********************/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #ccc;
+    color: white;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.footer-space {
+    clear: both;
+    margin-bottom: 15%;
 }
 
 /************** BUTTONS **********************/
@@ -205,7 +335,6 @@ main p {
     color: #FFF;
     padding: .4rem;
     background-color: #656565;
-    /*    border: solid 1px #656565;*/
     font-weight: bold;
     cursor: pointer;
 }
@@ -219,6 +348,10 @@ main p {
 
 .btn:active {
     opacity: 0.65;
+}
+
+.btn:focus {
+    outline: 0;
 }
 
 .btn-xs {
@@ -246,9 +379,17 @@ main p {
     cursor: not-allowed;
 }
 
-/**************** end buttons ****************/
+/*Long button in jumbotron*/
 
-/******** ACCORDION *************/
+.downloadBtn {
+    width: 80%;
+    margin: 2% 10%;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/**************** ACCORDION ***************/
 
 .accordion {
     background-color: #eee;
@@ -292,83 +433,798 @@ main p {
     padding: .75rem;
 }
 
-/************* end accordion ***************/
+/************************** TYPOGRAPHY ******************************/
 
-footer {
-    -webkit-box-shadow: 0px -5px 5px 0px rgba(102, 102, 102, 0.3);
-    -moz-box-shadow: 0px -5px 5px 0px rgba(102, 102, 102, 0.3);
-    box-shadow: 0px -5px 5px 0px rgba(102, 102, 102, 0.3);
-    background-color: #E3D26F;
+body {
+    font-family: 'Lato', sans-serif;
 }
 
-footer p {
-    font-size: 14px;
-    color: #443730;
+/* HEADLINES */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+    margin: 0.25em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2.25em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.75em;
+}
+
+h5 {
+    font-size: 1.5em;
+}
+
+h6 {
+    font-size: 1.25em;
+}
+
+/* TEXT ALIGNMENT */
+
+.left-text {
+    text-align: left;
+}
+
+.right-text {
+    text-align: right;
+}
+
+.center-text {
     text-align: center;
-    padding: .3em;
 }
 
-footer span {
-    font-family: 'Life Savers', cursive;
-    font-weight: 700;
+/* FONT STYLING */
+
+.bold {
+    font-weight: 800;
 }
 
-/*************** NAVIGATION LARGE SCREEN ***********************/
+.italic {
+    font-style: italic;
+}
+
+cite {
+    font-style: italic;
+}
+
+code {
+    color: crimson;
+    font-family: 'Source Code Pro', monospace;
+}
+
+var {
+    font-style: italic;
+}
+
+abbr {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+address {
+    display: block;
+    font-style: italic;
+}
+
+blockquote {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+/*Padding for FA Icons*/
+
+.fas {
+    padding-right: 10px;
+}
+
+/**************************** LISTS ************************/
+
+ol li {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+/************************** LINKS ************************/
+
+a {
+    color: #222;
+}
+
+a:hover {
+    color: #666;
+}
+
+/************************** TABLES **********************/
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 2%;
+}
+
+th {
+    text-transform: uppercase;
+    background-color: #666;
+    color: white;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Highlight table rows as user mouses over */
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Adds color to odd numbered rows */
+
+.striped tr:nth-child(odd) {
+    background-color: #ccc;
+}
+
+/* Adds borders on sides of table */
+
+.border-table {
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+/* Adds horizontal scroll bars to table in small screens */
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+/**************************** IMAGES **************************/
+
+/* Image thumbnails */
+
+/* To give an image a rounded 1px border appearance */
+
+.img-thumbnail {
+    padding: 0.25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Image-border-Radius */
+
+.rounded {
+    border-radius: 0.35rem;
+}
+
+.rounded-top {
+    border-top-left-radius: 0.35rem;
+    border-top-right-radius: 0.35rem;
+}
+
+.rounded-right {
+    border-top-right-radius: 0.35rem;
+    border-bottom-right-radius: 0.35rem;
+}
+
+.rounded-bottom {
+    border-bottom-right-radius: 0.35rem;
+    border-bottom-left-radius: 0.35rem;
+}
+
+.rounded-left {
+    border-top-left-radius: 0.35rem;
+    border-bottom-left-radius: 0.35rem;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+}
+
+/* Image with 90 degrees corners */
+
+.rounded-0 {
+    border-radius: 0;
+}
+
+/* Image-Borders - Change borders */
+
+.border {
+    border: 2px solid #e0e3e6;
+}
+
+.border-top {
+    border-top: 1px solid #e0e3e6;
+}
+
+.border-right {
+    border-right: 1px solid #e0e3e6;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e0e3e6;
+}
+
+.border-left {
+    border-left: 1px solid #e0e3e6;
+}
+
+.border-0 {
+    border: 0;
+}
+
+.border-top-0 {
+    border-top: 0;
+}
+
+.border-right-0 {
+    border-right: 0;
+}
+
+.border-bottom-0 {
+    border-bottom: 0;
+}
+
+.border-left-0 {
+    border-left: 0;
+}
+
+/* Image - Border color - Change border color */
+
+.border-blue {
+    border-color: #007bff;
+}
+
+.border-grey {
+    border-color: #6c757d;
+}
+
+.border-green {
+    border-color: #28a745;
+}
+
+.border-orange {
+    border-color: #ffc107;
+}
+
+.border-red {
+    border-color: #dc3545;
+}
+
+.border-light {
+    border-color: #f8f9fa;
+}
+
+.border-black {
+    border-color: #343a40;
+}
+
+.border-white {
+    border-color: #fff;
+}
+
+/************************** FORMS *****************************/
+
+/* Input classes */
+
+.form-control {
+    /* Default input size */
+    width: 100%;
+    line-height: 1.5;
+    border-radius: 0.4rem;
+    border: 1px solid #ccc;
+    border-left: 5px solid #39b54a;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 0.40rem .75rem;
+    font-size: inherit;
+}
+
+.form-control-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    /* 14px */
+}
+
+.form-control-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1.125rem;
+}
+
+/* Select classes */
+
+.select {
+    width: 100%;
+    line-height: 1.5;
+    border-radius: 0.4rem;
+    border: 1px solid #ccc;
+    border-left: 5px solid #39b54a;
+    border-right: 12px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-right: 12px solid #ccc;
+}
+
+.select-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    /* 14px */
+}
+
+.select-m {
+    padding: 0.40rem .75rem;
+    font-size: inherit;
+}
+
+.select-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1.125rem;
+}
+
+/* Textarea */
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+/* Radio Buttons */
+
+/* The container for radio buttons and checkboxes */
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button/checkbox  */
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+
+.checkmarkRadio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
+
+/* Create a custom checkbox */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+}
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button or checkbox is checked, add a green background */
+
+.container input:checked ~ .checkmark {
+    background-color: #39b54a;
+    /* Green */
+}
+
+/* Create the indicator (dot/circle or checkmark indicator - hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle or checkmark indicator) when checked */
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (checkmark) */
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Style the indicator (dot/circle) */
+
+.container .checkmarkRadio:after {
+    top: 6px;
+    left: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10%;
+    background: white;
+}
+
+/* End Radio Buttons/Checkbox */
+
+/* Submit button */
+
+input[type=submit] {
+    width: 100%;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Reset button */
+
+input[type=reset] {
+    width: 100%;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=reset]:hover {
+    background-color: #45a049;
+}
 
 @media (min-width: 750px) {
-    .menu {
-        display: block;
-        text-align: center;
-    }
-    .menuChild {
-        background-color: #E3D26F;
-        display: inline-block;
-        border-bottom: none;
-    }
-    .menuChild:first-child {
-        display: inline-block;
-    }
-    .expandedMenu {
-        color: #443730;
-        padding: 0 .5em;
-        margin-top: -50px;
-    }
-    .expandedMenu:hover,
-    .expandedMenu:active {
-        color: #588157;
-    }
-    .showMenu {
+
+    /*************** NAVIGATION FOR DESKTOP ***********************/
+    .bars,
+    .menu-small {
         display: none;
     }
-    /***************** end navigation *******************************/
-    header {
-        height: 2.5em;
+    .menu-large {
+        display: block;
+        list-style-type: none;
     }
-    .expandedMenu {
-        font-weight: 700;
+    .menu-large li {
+        display: inline-block;
+        padding: .5rem;
+        margin-left: 3rem;
     }
-    .fa-home {
-        color: #588157;
+    .menu-large a {
+        text-decoration: none;
+        color: #222;
     }
-    .fa-home:hover,
-    .fa-home:active {
-        color: #443730;
+    .menu-large a:hover {
+        color: #666;
     }
+    /******************* GRID FOR MEDIUM SCREEN ******************/
+    .wrapper {
+        width: 85%;
+        padding: 0;
+    }
+    .col {
+        margin-right: 2%;
+    }
+    .m-one {
+        width: 6.33333%;
+    }
+    .m-two {
+        width: 14.66666667%;
+    }
+    .m-three {
+        width: 23%;
+    }
+    .m-four {
+        width: 31.33333333%;
+    }
+    .m-five {
+        width: 39.66666667%;
+    }
+    .m-six {
+        width: 48%;
+    }
+    .m-seven {
+        width: 56.33333333%;
+    }
+    .m-eight {
+        width: 64.66666667%;
+    }
+    .m-nine {
+        width: 73%;
+    }
+    .m-ten {
+        width: 81.33333333%;
+    }
+    .m-eleven {
+        width: 89.66666667%;
+    }
+    .m-twelve {
+        width: 98%;
+    }
+    .m-full {
+        width: 100%;
+    }
+
+    /* BEGIN M Offsets */
+    /* These numbers are based on calculation of 100 (the width) divided by 12 (grid), to equal 8.3333% per column. */
+    .m-space-one {
+        margin-left: 8.33333%;
+    }
+    .m-space-two {
+        margin-left: 16.66666667%;
+    }
+    .m-space-three {
+        margin-left: 25%;
+    }
+    .m-space-four {
+        margin-left: 33.33333333%;
+    }
+    .m-space-five {
+        margin-left: 41.66666667%;
+    }
+    .m-space-six {
+        margin-left: 50%;
+    }
+    .m-space-seven {
+        margin-left: 58.33333333%;
+    }
+    .m-space-eight {
+        margin-left: 66.66666667%;
+    }
+    .m-space-nine {
+        margin-left: 75%;
+    }
+    .m-space-ten {
+        margin-left: 83.33333333%;
+    }
+    .m-space-eleven {
+        margin-left: 91.66666667%;
+    }
+    /* END M Offsets */
 }
 
-/* LOREN Nav+Jumbotron improvements*/
+@media (min-width: 970px) {
 
-.downloadBtn {
-    width: 80%;
-    margin: 5% 10%;
+    /******************* GRID FOR LARGE SCREEN ******************/
+    .wrapper {
+        width: 80%;
+    }
+    .col {
+        margin-right: 2%;
+    }
+    .l-one {
+        width: 6.33333%;
+    }
+    .l-two {
+        width: 14.66666667%;
+    }
+    .l-three {
+        width: 23%;
+    }
+    .l-four {
+        width: 31.33333333%;
+    }
+    .l-five {
+        width: 39.66666667%;
+    }
+    .l-six {
+        width: 48%;
+    }
+    .l-seven {
+        width: 56.33333333%;
+    }
+    .l-eight {
+        width: 64.66666667%;
+    }
+    .l-nine {
+        width: 73%;
+    }
+    .l-ten {
+        width: 81.33333333%;
+    }
+    .l-eleven {
+        width: 89.66666667%;
+    }
+    .l-twelve {
+        width: 98%;
+    }
+
+    /* BEGIN L Offsets */
+    /* These numbers are based on calculation of 100 (the width) divided by 12 (grid), to equal 8.3333% per column. */
+    .l-space-zero {
+        margin-left: 0;
+    }
+    .l-space-one {
+        margin-left: 8.33333%;
+    }
+    .l-space-two {
+        margin-left: 16.66666667%;
+    }
+    .l-space-three {
+        margin-left: 25%;
+    }
+    .l-space-four {
+        margin-left: 33.33333333%;
+    }
+    .l-space-five {
+        margin-left: 41.66666667%;
+    }
+    .l-space-six {
+        margin-left: 50%;
+    }
+    .l-space-seven {
+        margin-left: 58.33333333%;
+    }
+    .l-space-eight {
+        margin-left: 66.66666667%;
+    }
+    .l-space-nine {
+        margin-left: 75%;
+    }
+    .l-space-ten {
+        margin-left: 83.33333333%;
+    }
+    .l-space-eleven {
+        margin-left: 91.66666667%;
+    }
+    /* END L Offsets */
 }
 
-header {
-    /*Makes drop down open over jumbotron*/
-    z-index: 5;
-    position: absolute;
-    width: 100%;
-    height: 50px;
-}
+@media (min-width: 1170px) {
 
-/*LOREN END Nav+Jumbotron improvements*/
+    /******************* GRID FOR X-LARGE SCREEN ******************/
+    .wrapper {
+        width: 80%;
+    }
+    .col {
+        margin-right: 2%;
+    }
+    .xl-one {
+        width: 6.33333%;
+    }
+    .xl-two {
+        width: 14.66666667%;
+    }
+    .xl-three {
+        width: 23%;
+    }
+    .xl-four {
+        width: 31.33333333%;
+    }
+    .xl-five {
+        width: 39.66666667%;
+    }
+    .xl-six {
+        width: 48%;
+    }
+    .xl-seven {
+        width: 56.33333333%;
+    }
+    .xl-eight {
+        width: 64.66666667%;
+    }
+    .xl-nine {
+        width: 73%;
+    }
+    .xl-ten {
+        width: 81.33333333%;
+    }
+    .xl-eleven {
+        width: 89.66666667%;
+    }
+    .xl-twelve {
+        width: 98%;
+    }
+    /* BEGIN XL Offsets */
+    /* These numbers are based on calculation of 100 (the width) divided by 12 (grid), to equal 8.3333% per column. */
+    .xl-space-zero {
+        margin-left: 0;
+    }
+    .xl-space-one {
+        margin-left: 8.33333%;
+    }
+    .xl-space-two {
+        margin-left: 16.66666667%;
+    }
+    .xl-space-three {
+        margin-left: 25%;
+    }
+    .xl-space-four {
+        margin-left: 33.33333333%;
+    }
+    .xl-space-five {
+        margin-left: 41.66666667%;
+    }
+    .xl-space-six {
+        margin-left: 50%;
+    }
+    .xl-space-seven {
+        margin-left: 58.33333333%;
+    }
+    .xl-space-eight {
+        margin-left: 66.66666667%;
+    }
+    .xl-space-nine {
+        margin-left: 75%;
+    }
+    .xl-space-ten {
+        margin-left: 83.33333333%;
+    }
+    .xl-space-eleven {
+        margin-left: 91.66666667%;
+    }
+    /* END XL Offsets */
+}

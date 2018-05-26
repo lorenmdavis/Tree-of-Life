@@ -1,0 +1,73 @@
+/*
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #ccc;
+    color: white;
+    text-align: center;
+    padding-top: 1%;
+}
+*/
+
+/*Group Floats together*/
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    clear: both;
+}
+
+
+/*
+.footer-space {
+    clear: both;
+    margin-bottom: 15%;
+}
+*/
+
+/*
+.outlineB {
+    background-color: rgba(255, 0, 0, .5);
+}
+
+.outlineS {
+    background-color: rgba(255, 0, 0, .4);
+}
+
+.outlineL {
+    background-color: rgba(255, 0, 0, .3);
+}
+.colBGColor {
+    background-color: crimson;
+}
+
+.colBGColor {
+    background-color: orange;
+}
+
+.colBGColor {
+    background-color: gold;
+}
+
+.colBGColor {
+    background-color: green;
+}
+*/
+
+/*
+Removed this class from each media query
+    .col:last-child {
+        margin-right: 0;
+    }
+*/
