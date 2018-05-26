@@ -23,15 +23,15 @@ TABLE OF CONTENTS:
 20) GRID FOR MEDIUM SCREEN ----------------- Line 973 
 21) OFFSET FOR MEDIUM SCREEN --------------- Line 1021
 22) GRID FOR LARGE SCREEN ------------------ Line 1061
-23) OFFSET FOR LARGE SCREEN ---------------- Line 1105
-24) GRID FOR X-LARGE SCREEN ---------------- Line 1148
-25) OFFSET FOR X-LARGE SCREEN -------------- Line 1191
+23) OFFSET FOR LARGE SCREEN ---------------- Line 1102
+24) GRID FOR X-LARGE SCREEN ---------------- Line 1145 
+25) OFFSET FOR X-LARGE SCREEN -------------- Line 1185 
 
 BREAK POINTS:
 1) SMALL (DEFAULT)
-2) MEDIUM (750px) -------------------------- Line 950
-3) LARGE (970px) --------------------------- Line 1059
-4) X-LARGE (1170px) ------------------------ Line 1146
+2) MEDIUM (750px) -------------------------- Line 973
+3) LARGE (970px) --------------------------- Line 1061
+4) X-LARGE (1170px) ------------------------ Line 1145
 
 */
 
@@ -78,6 +78,10 @@ h5,
 h6 {
     font-size: 100%;
     font-weight: normal;
+}
+
+p {
+    line-height: 1.2;
 }
 
 ul {
@@ -976,7 +980,7 @@ input[type=reset]:hover {
         padding: 0;
     }
     .col {
-        margin-right: 2%;
+        margin: 2% 1% 0 1%;
     }
     .m-one {
         width: 6.33333%;
@@ -1062,9 +1066,6 @@ input[type=reset]:hover {
     .wrapper {
         width: 80%;
     }
-    .col {
-        margin-right: 2%;
-    }
     .l-one {
         width: 6.33333%;
     }
@@ -1148,9 +1149,6 @@ input[type=reset]:hover {
     /******************* GRID FOR X-LARGE SCREEN ******************/
     .wrapper {
         width: 80%;
-    }
-    .col {
-        margin-right: 2%;
     }
     .xl-one {
         width: 6.33333%;

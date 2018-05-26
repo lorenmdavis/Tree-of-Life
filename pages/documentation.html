@@ -11,13 +11,9 @@
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--link to Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Life+Savers:700|Pangolin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
     <!--Link to custom CSS-->
-    <!--
-    <link rel="stylesheet" href="../css/treeOfLife.css">
     <link rel="stylesheet" href="../css/main.css">
--->
-    <link rel="stylesheet" href="../css/groupCSS.css">
     <link rel="stylesheet" href="../css/docStyles.css">
     <!--    Link to Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -26,20 +22,29 @@
 </head>
 
 <body>
-    <!--Navigation Bar-->
-    <header>
-        <p class="logo float-left">Tree of Life</p>
-        <nav>
-            <label for="showMenu" class="showMenu"><span class="fas fa-bars" aria-hidden="true"></span></label>
-            <input type="checkbox" id="showMenu" role="button">
-            <ul class="menu float-right">
-                <li class="menuChild"><a href="index.html" class="expandedMenu"><span class="fas fa-home"></span></a></li>
-                <li class="menuChild"><a href="documentation.html" class="expandedMenu">Documentation</a></li>
-                <li class="menuChild"><a href="#" class="expandedMenu">Examples</a></li>
-                <li class="menuChild"><a href="#" class="expandedMenu">Starting File</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- NAVIGATION -->
+    <nav>
+        <!-- we need two sets of unordered lists one for mobile and one for desktop -->
+        <button class="bars"><span class="fas fa-bars"></span></button>
+        <!-- 3 little lines for the hamburger menu -->
+        <ul class="menu-small">
+            <!-- unordered list for mobile version -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+            <li><a href="#">Examples</a></li>
+            <li><a href="#">Starting File</a></li>
+        </ul>
+        <div class="clearfix"></div>
+        <!-- we need this clearfix otherwise the content will overlap with the menu -->
+        <ul class="menu-large">
+            <!-- unordered list for desktop version -->
+            <!-- the li elements will appear on the left, if you want them to appear on the right just add .menu-large{text-align: right;} to your css file -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+            <li><a href="#">Examples</a></li>
+            <li><a href="#">Starting File</a></li>
+        </ul>
+    </nav>
 
     <!--Framework Documentation-->
     <div class="wrapper">
