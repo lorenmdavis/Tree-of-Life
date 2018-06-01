@@ -1,0 +1,35 @@
+.table-full {
+    width: 100%;
+}
+
+.panel,
+.panel-inside {
+    padding: 0;
+    margin: 0;
+}
+
+h2,
+p {
+    margin: 0.25em 0;
+}
+
+.colBGColor {
+    background-color: mediumaquamarine;
+}
+
+/* FORMS */
+
+.indent {
+    text-indent: 50px;
+}
+
+.form-control {
+    margin: 5px 0 10px;
+}
+
+code {
+    color: navy;
+}
+
+
+/* END FORMS */
