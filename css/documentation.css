@@ -144,6 +144,7 @@ hr {
     padding-bottom: 2%;
     margin: 1em 0;
 }
+
 /*END GRID*/
 
 /* CSS for FORMS documentation */
@@ -206,3 +207,132 @@ code {
 }
 
 /*END images*/
+
+/* Zeina's Styles */
+
+.logo {
+    font: italic bold 180% Raleway, sans-serif !important;
+    padding-top: 5px !important;
+    color: #86ca34 !important;
+}
+
+.logo:hover {
+    color: #39b54a !important;
+}
+
+/* --- logo for mobile ------- */
+
+#logo-s {
+    font: italic bold 180% calibri, sans-serif;
+    float: left;
+    color: #86ca34;
+    text-align: center;
+    margin: 1rem;
+}
+
+#logo-s:hover {
+    color: #39b54a;
+}
+
+/* Hamburger menu bars */
+
+.bars {
+    font-size: 1.4rem;
+    margin: 1rem;
+}
+
+/* bg hover for mobile hamburger menu links */
+
+.menu-small li:hover {
+    background-color: #86ca34;
+}
+
+.menu-small li {
+    background-color: #eee;
+}
+
+.menu-small li a {
+    display: block;
+}
+
+/* -------- column styling ------------- */
+
+.footer-space {
+    margin-bottom: 10%;
+}
+
+/* -------- End column styling ---------- */
+
+/* -------- Social Media Footer --------- */
+
+.fab {
+    margin: -35px;
+    padding-top: 40px;
+    font-size: 2em;
+    color: #aaa;
+}
+
+.fab:hover {
+    margin: -35px;
+    font-size: 2em;
+    color: #86ca34;
+}
+
+/* -------- Footer Start ----------------- */
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    padding: 1em;
+    margin: 0 auto;
+    background-color: #565d65;
+    text-align: center;
+    color: white;
+}
+
+/* --------- Footer End ------------------ */
+
+@media (min-width: 750px) {
+    /* Logo for small screen*/
+    #logo-s {
+        display: none;
+    }
+    /* End Logo*/
+    /* -- Zeina's top nav menu bar --*/
+    .topnav {
+        overflow: hidden;
+        background-color: #f2f2f2;
+        opacity: 0.8;
+        z-index: 2;
+    }
+    .topnav a {
+        float: left;
+        display: block;
+        color: #566374;
+        text-align: center;
+        padding: 16px 16px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .topnav a:hover {
+        color: red;
+    }
+
+    .topnav a.activeLink {
+        color: red;
+    }
+
+    .topnav-right {
+        float: right;
+    }
+    .topnav a:last-child {
+        padding-right: 50px;
+    }
+}
+
+/* END Zeina's Styles */
