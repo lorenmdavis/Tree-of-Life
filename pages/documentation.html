@@ -1,3 +1,5 @@
+<!--List other border colors?-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -49,74 +51,14 @@
             <div class="col m-twelve">
                 <h2 class="center-text">Documentation</h2>
 
-                <!--1. Grid Framework-->
-                <button class="accordion">1. Grid Framework</button>
+                <!--1. Twelve Col Grid-->
+                <button class="accordion">1. Twelve Column Grid</button>
                 <div class="panel">
                     <div class="panel-inside">
-
-                        <!--Begin Grid Layout Explanation-->
-                        <h2>Framework Overview</h2>
-                        <p>Enter description here...</p>
-
-                        <div class="wrapper">
-                            <p>Each section of content is contained using the 'wrapper' class.</p>
-                            <div class="row">
-                                <p>Columns are wrapped in rows with the 'row' class.</p>
-                                <div class="col m-four">
-                                    <p>Columns are wrapped in containers using the 'col' class.</p>
-                                </div>
-                                <div class="col m-four">
-                                    <p>There can be up to 12 columns per row.</p>
-                                </div>
-                                <div class="col m-four">
-                                    <p>Content is one column at small screen, and can expand at larger sizes.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--END Grid layout-->
-                        <div class="clearfix"></div>
-
-                        <!--Begin Responsive Breakpoints-->
-                        <h2>Responsive Breakpoints</h2>
-                        <div class="wrapper">
-                            <table class="table-full border-table">
-                                <tr>
-                                    <th>Breakpoint</th>
-                                    <th>Media</th>
-                                </tr>
-                                <tr>
-                                    <td>Less than 750px</td>
-                                    <td>
-                                        <p><i class="fas fa-mobile-alt fa-2x"></i>Small</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Greater than 750px</td>
-                                    <td>
-                                        <p><i class="fas fa-tablet-alt fa-2x"></i>Medium</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Greater than 970px</td>
-                                    <td>
-                                        <p><i class="fas fa-desktop fa-2x"></i>Large</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Greater than 1170px</td>
-                                    <td>
-                                        <p><i class="fas fa-tv fa-2x"></i>Extra-Large</p>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <!--END Responsive Breakpoints-->
-                        <div class="clearfix"></div>
-
-                        <!--12 Col Grid-->
-                        <h2>12 Column Grid System</h2>
-                        <p>Enter description here...</p>
-                        <div class="wrapper">
+                        <!--12 Col Grid Example-->
+                        <h2>Twelve Column Grid System</h2>
+                        <p>At m,l, and xl screen sizes, each column has 1% margin left &amp; right.</p>
+                        <div class="wrapper-full twelveGrid">
                             <div class="row">
                                 <div class="m-one col colBGColor">
                                     <h4>1</h4>
@@ -265,172 +207,142 @@
                                 </div>
                             </div>
                         </div>
-                        <!--END 12 Col Grid-->
-
-                        <!--Grid Offsets-->
-                        <h2>Offsetting Columns</h2>
-                        <p>Enter description here...</p>
-                        <div class="wrapper">
-                            <div class="row">
-                                <div class="m-space-one m-one col colBGColor">
-                                    <h4>1</h4>
-                                </div>
-                                <div class="m-one col colBGColor">
-                                    <h4>1</h4>
-                                </div>
-                                <div class="m-one col colBGColor">
-                                    <h4>1</h4>
-                                </div>
-                                <div class="m-one col colBGColor">
-                                    <h4>1</h4>
-                                </div>
-                                <div class="m-one col colBGColor">
-                                    <h4>1</h4>
-                                </div>
-                                <div class="m-one col colBGColor">
-                                    <h4>1</h4>
-                                </div>
-                                <div class="m-one col colBGColor">
-                                    <h4>1</h4>
-                                </div>
-                                <div class="m-one col colBGColor">
-                                    <h4>1</h4>
-                                </div>
-                                <div class="m-one col colBGColor">
-                                    <h4>1</h4>
-                                </div>
-                                <div class="m-one col colBGColor">
-                                    <h4>1</h4>
-                                </div>
-                                <div class="m-one col colBGColor">
-                                    <h4>1</h4>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="m-space-two m-two col colBGColor">
-                                    <h4>2</h4>
-                                </div>
-                                <div class="m-two col colBGColor">
-                                    <h4>2</h4>
-                                </div>
-                                <div class="m-two col colBGColor">
-                                    <h4>2</h4>
-                                </div>
-                                <div class="m-two col colBGColor">
-                                    <h4>2</h4>
-                                </div>
-                                <div class="m-two col colBGColor">
-                                    <h4>2</h4>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="m-space-three m-three col colBGColor">
-                                    <h4>3</h4>
-                                </div>
-                                <div class="m-three col colBGColor">
-                                    <h4>3</h4>
-                                </div>
-                                <div class="m-three col colBGColor">
-                                    <h4>3</h4>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="m-space-four m-four col colBGColor">
-                                    <h4>4</h4>
-                                </div>
-                                <div class="m-four col colBGColor">
-                                    <h4>4</h4>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="m-space-five m-five col colBGColor">
-                                    <h4>5</h4>
-                                </div>
-
-                                <div class="m-two col colBGColor">
-                                    <h4>2</h4>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="m-space-six m-six col colBGColor">
-                                    <h4>6</h4>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="m-space-seven m-five col colBGColor">
-                                    <h4>5</h4>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="m-space-eight m-four col colBGColor">
-                                    <h4>4</h4>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="m-space-nine m-three col colBGColor">
-                                    <h4>3</h4>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="m-space-ten m-two col colBGColor">
-                                    <h4>2</h4>
-                                </div>
-
-                            </div>
-                            <div class="row">
-                                <div class="m-space-eleven m-one col colBGColor">
-                                    <h4>1</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <!--END Grid Offsets-->
-
-                        <!--BEGIN Responsive Sizing-->
-                        <h2>Responsive Sizes</h2>
-                        <p>Enter description here...</p>
-                        <div class="wrapper">
-                            <div class="row">
-                                <div class="m-six l-four xl-three col colBGColor">
-                                    <h4>Section 1</h4>
-                                    <p>Small screen (red): 1 column</p>
-                                    <p>Medium screen(orange): 2 columns</p>
-                                    <p>Large screen (yellow): 3 columns</p>
-                                    <p>Extra Large screen (green) : 4 columns</p>
-                                </div>
-                                <div class="m-six l-four xl-three col colBGColor">
-                                    <h4>Section 2</h4>
-                                    <p>Small screen (red): 1 column</p>
-                                    <p>Medium screen(orange): 2 columns</p>
-                                    <p>Large screen (yellow): 3 columns</p>
-                                    <p>Extra Large screen (green) : 4 columns</p>
-                                </div>
-                                <div class="m-six l-four xl-three col colBGColor">
-                                    <h4>Section 3</h4>
-                                    <p>Small screen (red): 1 column</p>
-                                    <p>Medium screen(orange): 2 columns</p>
-                                    <p>Large screen (yellow): 3 columns</p>
-                                    <p>Extra Large screen (green) : 4 columns</p>
-                                </div>
-                                <div class="m-six l-four l-space-four xl-space-zero xl-three col colBGColor">
-                                    <h4>Section 4</h4>
-                                    <p>Small screen (red): 1 column</p>
-                                    <p>Medium screen(orange): 2 columns</p>
-                                    <p>Large screen (yellow): 3 columns</p>
-                                    <p>Extra Large screen (green) : 4 columns</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--END Responsive Sizing-->
+                        <div class="clearfix"></div>
                     </div>
                 </div>
 
-                <!--2. Text Styles-->
-                <button class="accordion">2. Text Styles</button>
+                <!--2. How It Works-->
+                <button class="accordion">2. How It Works</button>
+                <div class="panel">
+                    <div class="panel-inside">
+                        <h2>How It Works</h2>
+                        <hr>
+                        <p>1. Choose a wrapper container.</p>
+                        <p class="indent">.wrapper, includes 20px padding on right &amp; left.</p>
+                        <p class="indent">.wrapper-full, is full width</p>
+                        <hr>
+                        <p>2. Inside the wrapper, organize content with the .row class</p>
+                        <hr>
+                        <p>3. Make columns with the .col class</p>
+                        <p class="indent">- In each row, there can be up to 12 columns</p>
+                        <p class="indent">- Or any combination that adds up to 12 (ex: 6+6, 3+9, 7+5) </p>
+                        <hr>
+                        <p> 4. Mobile First, Assigning the .col class will display content at 100%</p>
+                        <p class="indent">Use the screen size prefix (m-, l-, or xl-) and a number (one to twelve, spelled out) to create columns that will take up that number of columns at that media query.</p>
+                        <p class="indent">A column that has a class of '.col .m-six' will be 100% width at a small screen, then at the medium breakpoint will be 6 columns, or 50% of the screen.</p>
+                        <hr>
+
+                        <div class="wrapper-full wrapperDoc">
+                            <p class="bold">.wrapper</p>
+                            <div class="row rowDoc">
+                                <p class="bold">.row</p>
+                                <div class="col m-six l-four xl-three rcsColor">
+                                    <p class="s-screen">Default <code>&lt;class="col"&gt;</code></p>
+                                    <p class="m-screen">Medium <code>&lt;class="col m-six"&gt;</code></p>
+                                    <p class="l-screen">Large <code>&lt;class="col l-four"&gt;</code></p>
+                                    <p class="xl-screen">Extra Large <code>&lt;class="col xl-three"&gt;</code></p>
+                                </div>
+                                <div class="col m-six l-four xl-three rcsColor">
+                                    <p class="s-screen">Default <code>&lt;class="col"&gt;</code></p>
+                                    <p class="m-screen">Medium <code>&lt;class="col m-six"&gt;</code></p>
+                                    <p class="l-screen">Large <code>&lt;class="col l-four"&gt;</code></p>
+                                    <p class="xl-screen">Extra Large <code>&lt;class="col xl-three"&gt;</code></p>
+                                </div>
+                                <div class="col m-twelve l-four xl-six rcsColor">
+                                    <p class="s-screen">Default <code>&lt;class="col"&gt;</code></p>
+                                    <p class="m-screen">Medium <code>&lt;class="col m-twelve"&gt;</code></p>
+                                    <p class="l-screen">Large <code>&lt;class="col l-four"&gt;</code></p>
+                                    <p class="xl-screen">Extra Large <code>&lt;class="col xl-six"&gt;</code></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END How it works-->
+                        <div class="clearfix"></div>
+
+                        <!--Begin Responsive Breakpoints-->
+                        <h2>Responsive Breakpoints</h2>
+                        <div class="wrapper-full">
+                            <div class="table-responsive">
+                                <table class="table-full border-table">
+                                    <tr>
+                                        <th>Breakpoint</th>
+                                        <th>Media</th>
+                                        <th>Code</th>
+                                        <th>Example</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Less than 750px</td>
+                                        <td>
+                                            <p><i class="fas fa-mobile-alt fa-2x"></i>Small</p>
+                                        </td>
+                                        <td>.col</td>
+                                        <td><code>&lt;class="col"&gt;</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Greater than 750px</td>
+                                        <td>
+                                            <p><i class="fas fa-tablet-alt fa-2x"></i>Medium</p>
+                                        </td>
+                                        <td>.col .m-(#)</td>
+                                        <td><code>&lt;class="col m-four"&gt;</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Greater than 970px</td>
+                                        <td>
+                                            <p><i class="fas fa-desktop fa-2x"></i>Large</p>
+                                        </td>
+                                        <td>.col .l-(#)</td>
+                                        <td><code>&lt;class="col l-four"&gt;</code></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Greater than 1170px</td>
+                                        <td>
+                                            <p><i class="fas fa-tv fa-2x"></i>Extra-Large</p>
+                                        </td>
+                                        <td>.col .xl-(#)</td>
+                                        <td><code>&lt;class="col xl-four"&gt;</code></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <!--3. Offsetting Columns-->
+                <button class="accordion">3. Offsetting Columns</button>
+                <div class="panel">
+                    <div class="panel-inside">
+                        <h2>Offsetting Columns</h2>
+                        <p>No offsets at small screen view because columns are 100% width.</p>
+                        <p>To offset columns on the left side, at m, l, or xl screen sizes add a class of: (prefix)-space-(# of columns to offset)</p>
+                        <div class="wrapper-full offsetting">
+                            <div class="row">
+                                <div class="col m-eight m-space-two l-six l-space-three xl-five xl-space-seven rcsColor">
+                                    <p class="s-screen">No offsets at small screen</p>
+                                    <!--medium-->
+                                    <p class="m-screen"><code>&lt;class="col m-eight m-space-two"&gt;</code></p>
+                                    <p class="m-screen">Medium: 8 columns wide, offset by 2</p>
+                                    <!--large-->
+                                    <p class="l-screen"><code>&lt;class="col l-six l-space-three"&gt;</code></p>
+                                    <p class="l-screen">Large: 6 columns wide, offset by 3</p>
+                                    <!--extra large-->
+                                    <p class="xl-screen"><code>&lt;class="col xl-five xl-space-seven"&gt;</code></p>
+                                    <p class="xl-screen">Extra Large: 5 columns wide, offset by 7</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--4. Text Styles-->
+                <button class="accordion">4. Text Styles</button>
                 <div class="panel">
                     <div class="panel-inside">
                         <table class="table-full border-table">
                             <tr>
-                                <th>CSS</th>
+                                <th>Code</th>
                                 <th>Headings</th>
                             </tr>
                             <tr>
@@ -470,7 +382,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th>CSS</th>
+                                <th>Code</th>
                                 <th>Inline Text Styles</th>
                             </tr>
                             <tr>
@@ -536,7 +448,7 @@
                             <tr>
                                 <td>&lt;address&gt;</td>
                                 <td>
-                                    <p>Text below is an address; <address>Tree of Life<br />123 Main Street<br /> San Diego, Ca 92102</address></p>
+                                    <p>Text below is an address; <address>Jane Doe<br />123 Main Street<br /> San Diego, Ca 92102</address></p>
                                 </td>
                             </tr>
                             <tr>
@@ -568,7 +480,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th>CSS</th>
+                                <th>Code</th>
                                 <th>List Styles</th>
                             </tr>
                             <tr>
@@ -595,13 +507,11 @@
                     </div>
                 </div>
 
-                <!--3. Table Styles-->
-                <button class="accordion">3. Tables</button>
+                <!--5. Table Styles-->
+                <button class="accordion">5. Tables</button>
                 <div class="panel">
                     <div class="panel-inside">
-                        <!--                       Default Table-->
                         <h2>Default Table</h2>
-                        <p>Default styling, rows highlight as user mouses over rows.</p>
                         <table class="table-full">
                             <tr>
                                 <th>First Name</th>
@@ -624,7 +534,7 @@
                                 <td>80</td>
                             </tr>
                         </table>
-                        <!--                        Striped Table-->
+
                         <h2>Striped Table</h2>
                         <p>Adds background color to odd numbered rows. Add 'striped' class to table element. </p>
                         <table class="table-full striped">
@@ -756,12 +666,11 @@
                     </div>
                 </div>
 
-                <!--4. Forms-->
-                <button class="accordion">4. Forms</button>
+                <!--6. Forms-->
+                <button class="accordion">6. Forms</button>
                 <div class="panel">
                     <div class="panel-inside">
                         <h2>Text Boxes</h2>
-                        <p>Enter description here...</p>
                         <table class="table-full border-table">
                             <tr>
                                 <th>Code</th>
@@ -791,7 +700,6 @@
                         </table>
 
                         <h2>Drop Down Menus</h2>
-                        <p>Enter description here...</p>
                         <table class="table-full border-table">
                             <tr>
                                 <th>Code</th>
@@ -832,9 +740,7 @@
                             </tr>
                         </table>
 
-                        <!--Text Areas-->
                         <h2>Text Areas</h2>
-                        <p>Enter description here...</p>
                         <table class="table-full border-table">
                             <tr>
                                 <th>Code</th>
@@ -849,7 +755,6 @@
                             </tr>
                         </table>
 
-                        <!--Checkboxes-->
                         <h2>Checkboxes</h2>
                         <table class="table-full border-table">
                             <tr>
@@ -880,7 +785,7 @@
                                 </td>
                             </tr>
                         </table>
-                        <!--Radio Buttons-->
+
                         <h2>Radio Buttons</h2>
                         <table class="table-full border-table">
                             <tr>
@@ -912,7 +817,7 @@
                                 </td>
                             </tr>
                         </table>
-                        <!--Submit Buttons-->
+
                         <h2>Submit Buttons</h2>
                         <table class="table-full border-table">
                             <tr>
@@ -934,15 +839,14 @@
                     </div>
                 </div>
 
-                <!--5. Buttons-->
-                <button class="accordion">5. Buttons</button>
+                <!--7. Buttons-->
+                <button class="accordion">7. Buttons</button>
                 <div class="panel">
                     <div class="panel-inside">
                         <h2>Buttons</h2>
-                        <p>Enter description here...</p>
                         <table class="table-full border-table">
                             <tr>
-                                <th>CSS</th>
+                                <th>Code</th>
                                 <th>Example</th>
                             </tr>
                             <tr>
@@ -969,44 +873,92 @@
                     </div>
                 </div>
 
-                <!--6. Images-->
-                <button class="accordion">6. Images</button>
-                <div class="panel">
+                <!--8. Images-->
+                <button class="accordion">8. Images</button>
+                <div class="panel img-panel">
                     <div class="panel-inside">
                         <h2>Images</h2>
-                        <p>Enter description here...</p>
                         <table class="table-full border-table">
                             <tr>
-                                <th>CSS</th>
+                                <th>Code</th>
                                 <th>Example</th>
                             </tr>
                             <tr>
-                                <td>code</td>
-                                <td>example</td>
+                                <td>
+                                    <p>Make image responsive</p>
+                                    <p><code>.img-responsive</code></p>
+                                </td>
+                                <td><img class="img-responsive" src="../images/../images/fox.jpg" alt="Fox"></td>
                             </tr>
                             <tr>
-                                <td>code</td>
-                                <td>example</td>
+                                <td>
+                                    <p>Image Thumbnail, rounded corners &amp; border</p>
+                                    <p><code>.img-thumbnail</code></p>
+                                </td>
+                                <td><img class="img-thumbnail" src="../images/../images/fox.jpg" alt="Fox"></td>
                             </tr>
                             <tr>
-                                <td>code</td>
-                                <td>example</td>
+                                <td>
+                                    <p>Rounded Corners</p>
+                                    <p><code>.rounded</code></p>
+                                </td>
+                                <td><img class="rounded" src="../images/fox.jpg" alt="Fox"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Rounded Top</p>
+                                    <p><code>.rounded-top</code></p>
+                                </td>
+                                <td><img class="rounded-top" src="../images/fox.jpg" alt="Fox"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Circular Image</p>
+                                    <p><code>.rounded-circle</code></p>
+                                </td>
+                                <td><img class="rounded-circle" src="../images/fox.jpg" alt="Fox"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Colored Border</p>
+                                    <p><code>.border .border-red</code></p>
+                                    <br />
+                                    <p>Other available border colors:</p>
+                                    <p>
+                                        <code>
+                                        <span class="b-blue">.border-blue,</span>
+                                        <span class="b-grey">.border-grey,</span>
+                                        <br />
+                                        <span class="b-green">.border-green,</span>
+                                        <span class="b-orange">.border-orange,</span>
+                                        <br />
+                                        <span class="b-red">.border-red,</span>
+                                        <span class="b-light">.border-light,</span>
+                                        <br />
+                                        <span class="b-black">.border-black,</span>
+                                        <span class="b-white">.border-white</span>
+                                        </code>
+                                    </p>
+
+
+                                </td>
+                                <td><img class="border border-red" src="../images/fox.jpg" alt="Fox"></td>
+
                             </tr>
                         </table>
                     </div>
                 </div>
 
-                <!--7. Helper Classes-->
-                <button class="accordion">7. Helper Classes</button>
+                <!--9. Helper Classes-->
+                <button class="accordion">9. Helper Classes</button>
                 <div class="panel">
                     <div class="panel-inside">
 
                         <!--Quick Floats-->
                         <h2>Quick Floats</h2>
-                        <p>Enter description here...</p>
                         <table class="table-full border-table">
                             <tr>
-                                <th>CSS</th>
+                                <th>Code</th>
                                 <th>Example</th>
                             </tr>
                             <tr>
@@ -1031,10 +983,9 @@
 
                         <!--No Print-->
                         <h2>No Print</h2>
-                        <p>Enter description here...</p>
                         <table class="table-full border-table">
                             <tr>
-                                <th>CSS</th>
+                                <th>Code</th>
                                 <th>Example</th>
                             </tr>
                             <tr>
@@ -1054,30 +1005,33 @@
                     </div>
                 </div>
 
-                <!--8. Icons-->
-                <button class="accordion">8. Icons</button>
+                <!--10. Icons-->
+                <button class="accordion">10. Icons</button>
                 <div class="panel">
                     <div class="panel-inside">
 
-                        <h2>Title</h2>
-                        <p>Enter description here...</p>
+                        <h2>Font Awesome</h2>
+                        <p>A link to Font Awesome is already included, so start adding any icon from their library right away!</p>
                         <table class="table-full border-table">
                             <tr>
-                                <th>CSS</th>
+                                <th>Code</th>
                                 <th>Example</th>
                             </tr>
                             <tr>
-                                <td>code</td>
-                                <td>example</td>
+                                <td><code>&lt;i class="far fa-thumbs-up"&gt;&lt;/i&gt;</code></td>
+                                <td><i class="far fa-thumbs-up fa-3x"></i></td>
                             </tr>
                             <tr>
-                                <td>code</td>
-                                <td>example</td>
+                                <td><code>&lt;i class="far fa-star"&gt;&lt;/i&gt;</code></td>
+                                <td><i class="far fa-star fa-3x"></i></td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;i class="far fa-smile"&gt;&lt;/i&gt;</code></td>
+                                <td><i class="far fa-smile fa-3x"></i></td>
                             </tr>
                         </table>
                     </div>
                 </div>
-
                 <div class="clearfix"></div>
             </div>
             <!--  END col-->
