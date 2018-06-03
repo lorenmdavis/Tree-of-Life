@@ -1,16 +1,19 @@
 /* --- logo ---------------- */
+
 .logo {
     font: italic bold 180% Raleway, sans-serif !important;
     padding-top: 5px !important;
     color: #86ca34 !important;
 }
+
 .logo:hover {
     color: #39b54a !important;
 }
+
 /* --- End logo -------------- */
 
-
 /* --- logo for mobile ------- */
+
 #logo-s {
     font: italic bold 180% calibri, sans-serif;
     float: left;
@@ -18,18 +21,22 @@
     text-align: center;
     margin: 1rem;
 }
+
 #logo-s:hover {
     color: #39b54a;
 }
+
 /* --- End logo for mobile --- */
 
 /* Hamburger menu bars */
+
 .bars {
     font-size: 1.4rem;
     margin: 1rem;
 }
 
 /* bg hover for mobile hamburger menu links */
+
 .menu-small li:hover {
     background-color: #86ca34;
 }
@@ -45,31 +52,40 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-menu-small li {
-    background-color: #bdc1b9a6;
+
+.menu-small li {
+    background-color: #eee;
+}
+
+.menu-small li a {
+    display: block;
 }
 
 /* fontawesome styles -----------------------*/
+
 .fas {
-        font-size: 1.2em;  
-        padding: 0 0.5em 0; 
-        color: #444653;
+    font-size: 1.2em;
+    padding: 0 0.5em 0;
+    color: #444653;
 }
+
 /* End fontawesome styles -------------------*/
 
-
 /* fontawsome - download button in header -- */
+
 .fas-header {
     color: #86ca34;
 }
+
 .downloadBtn {
     position: relative;
     text-align: center;
     margin: 0 auto;
     font-size: 90%;
-}   
+}
+
 .downloadBtn p.btn {
     position: absolute;
     top: 70px;
@@ -77,10 +93,11 @@ menu-small li {
     width: 100%;
     color: #fb757b;
 }
+
 /* -------- End header download button-- */
 
-
 /* -------- column styling ------------- */
+
 h1 {
     font: italic bold 150%/1.3em 'Raleway', sans-serif !important;
     background-color: #bdc1b9a6;
@@ -88,15 +105,19 @@ h1 {
     opacity: 0.8;
     color: #13a51a;
 }
+
 h4 {
     font-size: 1.4em;
 }
+
 /* used on first .col p tag */
+
 .intro {
     float: left;
 }
 
 /* used on first .col p tag */
+
 .right {
     color: silver;
 }
@@ -111,11 +132,13 @@ h4 {
     padding: 1%;
     margin: 4% 1% 1% 1%;
     box-sizing: border-box;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
+
 .col:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
+
 .col h4 {
     background-color: #bdc1b9a6;
     border-bottom: 2px solid #44465321;
@@ -124,32 +147,37 @@ h4 {
     line-height: 2em;
     font-weight: bold;
 }
+
 .col p {
     line-height: 1.5em;
     padding: 1.2em;
 }
+
 .footer-space {
     margin-bottom: 10%;
 }
+
 /* -------- End column styling ---------- */
 
-
 /* -------- Social Media Footer --------- */
+
 .fab {
     margin: -35px;
     padding-top: 40px;
-    font-size: 2em;  
+    font-size: 2em;
     color: #aaa;
 }
+
 .fab:hover {
     margin: -35px;
-    font-size: 2em;  
+    font-size: 2em;
     color: #86ca34;
 }
+
 /* -------- End Social Media Footer ----- */
 
-
 /* -------- Footer Start ----------------- */
+
 footer {
     position: relative;
     left: 0;
@@ -162,10 +190,11 @@ footer {
     text-align: center;
     color: white;
 }
+
 /* --------- Footer End ------------------ */
 
-
 /* --------- Start @media min 750px ------ */
+
 @media (min-width: 750px) {
 
     /*************** NAVIGATION FOR DESKTOP ****************/
@@ -173,11 +202,11 @@ footer {
     .jumbotron {
         height: 300px;
     }
-    
-     /* download button over jumbotron*/   
+
+    /* download button over jumbotron*/
     .downloadBtn {
         position: relative;
-        
+
     }
     .downloadBtn p.btn {
         position: absolute;
@@ -185,22 +214,19 @@ footer {
         color: #fb757b;
         min-width: 300px;
     }
-    /* End download button over jumbotron*/ 
-    
-    /* Logo for small screen*/  
+    /* End download button over jumbotron*/
+    /* Logo for small screen*/
     #logo-s {
         display: none;
     }
-    /* End Logo*/  
-
-    
- /* -- Zeina's top nav menu bar --*/   
-    .topnav  {
+    /* End Logo*/
+    /* -- Zeina's top nav menu bar --*/
+    .topnav {
         overflow: hidden;
         background-color: #f2f2f2;
         opacity: 0.8;
         z-index: 2;
-    }   
+    }
     .topnav a {
         float: left;
         display: block;
@@ -226,18 +252,17 @@ footer {
     .topnav a:last-child {
         padding-right: 50px;
     }
-    /* -- End Zeina's top nav menu bar --*/ 
-    
+    /* -- End Zeina's top nav menu bar --*/
     h1 {
         font: italic bold 200%/2em 'Raleway', sans-serif !important;
     }
-    
+
     /* used on first .col p tag */
     .intro {
         font-size: 1.2em;
         float: left;
     }
-    
+
     /* used on first .col p tag */
     .right {
         float: right;
@@ -248,11 +273,5 @@ footer {
         color: #13a51a;
     }
 }
+
 /* --------- End @media min 750px ------ */
-
-     
-
-
-
-
-    
